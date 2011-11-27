@@ -1,0 +1,95 @@
+<DataModel xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
+  <Entity id="User" name="User" duration="persistent" gr:x="20" gr:y="20" gr:hideAttributes="false" attributeOrder="userOID userName password email">
+    <Attribute name="oid" id="userOID" type="integer" key="true"/>
+    <Attribute name="userName" id="userName" type="string"/>
+    <Attribute name="password" id="password" type="password"/>
+    <Attribute name="email" id="email" type="string"/>
+  </Entity>
+  <Entity id="Group" name="Group" duration="persistent" gr:x="250" gr:y="40" gr:hideAttributes="false" attributeOrder="groupOID groupName">
+    <Attribute name="oid" id="groupOID" type="integer" key="true"/>
+    <Attribute name="groupName" id="groupName" type="string"/>
+  </Entity>
+  <Entity id="Module" name="Module" duration="persistent" gr:x="472" gr:y="29" gr:hideAttributes="false" attributeOrder="moduleOID moduleID moduleName">
+    <Attribute name="oid" id="moduleOID" type="integer" key="true"/>
+    <Attribute name="moduleID" id="moduleID" type="string"/>
+    <Attribute name="moduleName" id="moduleName" type="string"/>
+  </Entity>
+  <Relationship id="User2Group_Group2User" name="User_Group" sourceEntity="User" targetEntity="Group">
+    <RelationshipRole1 id="User2Group" name="groups" maxCard="N"/>
+    <RelationshipRole2 id="Group2User" name="users" maxCard="N"/>
+  </Relationship>
+  <Relationship id="User2DefaultGroup_DefaultGroup2User" name="User_DefaultGroup" sourceEntity="User" targetEntity="Group" gr:bendpoints="113,42,-112,44">
+    <RelationshipRole1 id="User2DefaultGroup" name="defaultGroup" maxCard="1"/>
+    <RelationshipRole2 id="DefaultGroup2User" name="defaultUsers" maxCard="N"/>
+  </Relationship>
+  <Relationship id="Group2DefaultModule_DefaultModule2Group" name="Group_DefaultModule" sourceEntity="Group" targetEntity="Module">
+    <RelationshipRole1 id="Group2DefaultModule" name="defaultModule" maxCard="1"/>
+    <RelationshipRole2 id="DefaultModule2Group" name="defaultGroups" maxCard="N"/>
+  </Relationship>
+  <Relationship id="Group2Module_Module2Group" name="Group_Module" sourceEntity="Group" targetEntity="Module" gr:bendpoints="110,41,-115,41">
+    <RelationshipRole1 id="Group2Module" name="modules" maxCard="N"/>
+    <RelationshipRole2 id="Module2Group" name="groups" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="470" gr:y="190" id="ent1" name="Anuncios" duration="persistent" attributeOrder="ent1#att1 ent1#att8 ent1#att2 ent1#att5 ent1#att6 ent1#att7 ent1#att9 ent1#att10 ent1#att11 ent1#att12 ent1#att13">
+    <Attribute id="ent1#att1" key="true" name="id_anuncio" type="integer"/>
+    <Attribute id="ent1#att2" name="data" type="date"/>
+    <Attribute id="ent1#att5" name="marca" type="string"/>
+    <Attribute id="ent1#att6" name="modelo" type="string"/>
+    <Attribute id="ent1#att7" name="descricao" type="string"/>
+    <Attribute id="ent1#att8" name="titulo" type="string"/>
+    <Attribute id="ent1#att9" name="cilindrada" type="string"/>
+    <Attribute id="ent1#att10" name="cor" type="string"/>
+    <Attribute id="ent1#att11" name="tipo" type="string"/>
+    <Attribute id="ent1#att12" name="carrocaria" type="string"/>
+    <Attribute id="ent1#att13" name="combustivel" type="string"/>
+  </Entity>
+  <Entity gr:x="240" gr:y="190" id="ent2" name="Utilizadores" duration="persistent" attributeOrder="ent2#att3 ent2#att17 ent2#att19 ent2#att20 ent2#att26">
+    <Attribute id="ent2#att3" key="true" name="id_utilizador" type="integer"/>
+    <Attribute id="ent2#att17" name="nome" type="string"/>
+    <Attribute id="ent2#att19" name="email" type="string"/>
+    <Attribute id="ent2#att20" name="telemovel" type="integer"/>
+    <Attribute id="ent2#att26" name="estado" type="boolean"/>
+  </Entity>
+  <Entity gr:x="660" gr:y="290" id="ent3" name="Fotografias" duration="persistent" attributeOrder="ent3#att4 ent3#att15 ent3#att16">
+    <Attribute id="ent3#att4" key="true" name="id_foto" type="integer"/>
+    <Attribute id="ent3#att15" name="nome" type="string"/>
+    <Attribute id="ent3#att16" name="foto" type="blob"/>
+  </Entity>
+  <Entity gr:x="230" gr:y="390" id="ent4" name="Comentarios" duration="persistent" attributeOrder="ent4#att14 ent4#att22 ent4#att23">
+    <Attribute id="ent4#att14" key="true" name="id_comentario" type="integer"/>
+    <Attribute id="ent4#att22" name="comentario" type="string"/>
+    <Attribute id="ent4#att23" name="estado" type="boolean"/>
+  </Entity>
+  <Relationship id="rel1" name="Users_Anuncios" sourceEntity="ent2" targetEntity="ent1">
+    <RelationshipRole1 id="rel1#role1" name="UsersToAnuncios" maxCard="1"/>
+    <RelationshipRole2 id="rel1#role2" name="AnunciosToUsers" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel2" name="Anuncios_Fotografias" sourceEntity="ent1" targetEntity="ent3">
+    <RelationshipRole1 id="rel2#role3" name="AnunciosToFotografias" maxCard="1"/>
+    <RelationshipRole2 id="rel2#role4" name="FotografiasToAnuncios" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel3" name="Anuncios_Comentarios" sourceEntity="ent1" targetEntity="ent4">
+    <RelationshipRole1 id="rel3#role5" name="AnunciosToComentarios" maxCard="1"/>
+    <RelationshipRole2 id="rel3#role6" name="ComentariosToAnuncios" maxCard="N"/>
+  </Relationship>
+  <Relationship id="rel4" name="Users_Comentarios" sourceEntity="ent2" targetEntity="ent4">
+    <RelationshipRole1 id="rel4#role7" name="UsersToComentarios" maxCard="1"/>
+    <RelationshipRole2 id="rel4#role8" name="ComentariosToUsers" maxCard="N"/>
+  </Relationship>
+  <Entity gr:x="30" gr:y="230" id="ent5" name="Tipo de Utilizador" duration="persistent" attributeOrder="ent5#att24 ent5#att25">
+    <Attribute id="ent5#att24" key="true" name="id_tipo" type="integer"/>
+    <Attribute id="ent5#att25" name="descricao" type="string"/>
+  </Entity>
+  <Relationship id="rel5" name="Utilizadores_Permissoes" sourceEntity="ent2" targetEntity="ent5">
+    <RelationshipRole1 id="rel5#role9" name="UtilizadoresToPermissoes" maxCard="N"/>
+    <RelationshipRole2 id="rel5#role10" name="PermissoesToUtilizadores" maxCard="1"/>
+  </Relationship>
+  <Entity gr:x="20" gr:y="390" id="ent7" name="Permissoes" duration="persistent" attributeOrder="ent7#att28 ent7#att29">
+    <Attribute id="ent7#att28" key="true" name="id_permissao" type="integer"/>
+    <Attribute id="ent7#att29" name="nome" type="string"/>
+  </Entity>
+  <Relationship id="rel7" name="Tipo de Utilizador_Permissoes" sourceEntity="ent5" targetEntity="ent7">
+    <RelationshipRole1 id="rel7#role13" name="Tipo de UtilizadorToPermissoes" maxCard="N"/>
+    <RelationshipRole2 id="rel7#role14" name="PermissoesToTipo de Utilizador" maxCard="N"/>
+  </Relationship>
+</DataModel>
