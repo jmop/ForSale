@@ -1,8 +1,23 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area4#area5#area9#page2" name="Utilizadores">
-  <ContentUnits/>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="80" gr:y="110" id="sv1#area4#area5#area9#page2" name="Gest&#227;o de Utilizadores">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv1#area4#area5#area9#page2#inu1" name="Lista de Utilizadores" entity="ent2" displayAttributes="ent2#att17 ent2#att19 ent2#att20" linkOrder="sv1#area4#area5#area9#page2#inu1#ln12 sv1#area4#area5#area9#page2#inu1#ln15 sv1#area4#area5#area9#page2#inu1#ln19">
+      <Link id="sv1#area4#area5#area9#page2#inu1#ln12" name="editar" to="sv1#area4#area5#area9#page11#seu2" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv1#area4#area5#area9#page2#inu1#ln15" name="Eliminar" to="sv1#area4#area5#area9#dlu1" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#area4#area5#area9#page2#inu1#ln19" name="castigar" to="sv1#area4#area5#area9#page12#seu3" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
   <layout:Grid>
     <layout:Row>
-      <layout:Cell/>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area5#area9#page2#inu1">
+          <layout:Link link="sv1#area4#area5#area9#page2#inu1#ln12"/>
+          <layout:Link link="sv1#area4#area5#area9#page2#inu1#ln15"/>
+          <layout:Link link="sv1#area4#area5#area9#page2#inu1#ln19"/>
+          <layout:Attribute attribute="ent2#att17"/>
+          <layout:Attribute attribute="ent2#att19"/>
+          <layout:Attribute attribute="ent2#att20"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>

@@ -1,8 +1,29 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area4#area5#area8#page1" name="Registar">
-  <ContentUnits/>
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area4#area5#area8#page1#enu1" name="Registo" linkOrder="sv1#area4#area5#area8#page1#enu1#ln2">
+      <Field id="sv1#area4#area5#area8#page1#enu1#fld1" name="nome" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area5#area8#page1#enu1#fld2" name="email" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area5#area8#page1#enu1#fld3" name="telemovel" type="integer" modifiable="true"/>
+      <Link id="sv1#area4#area5#area8#page1#enu1#ln2" name="Registar" to="sv1#area4#area5#area8#cru2" type="normal" validate="true">
+        <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par1" name="email_email" source="sv1#area4#area5#area8#page1#enu1#fld2" target="sv1#area4#area5#area8#cru2.ent2#att19"/>
+        <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par2" name="nome_nome" source="sv1#area4#area5#area8#page1#enu1#fld1" target="sv1#area4#area5#area8#cru2.ent2#att17"/>
+        <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par3" name="telemovel_telemovel" source="sv1#area4#area5#area8#page1#enu1#fld3" target="sv1#area4#area5#area8#cru2.ent2#att20"/>
+        <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par32" name="password_password" source="sv1#area4#area5#area8#page1#enu1#fld23" target="sv1#area4#area5#area8#cru2.ent2#att18"/>
+      </Link>
+      <Field id="sv1#area4#area5#area8#page1#enu1#fld23" name="password" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
   <layout:Grid>
     <layout:Row>
-      <layout:Cell/>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area5#area8#page1#enu1">
+          <layout:Link link="sv1#area4#area5#area8#page1#enu1#ln2"/>
+          <layout:Field field="sv1#area4#area5#area8#page1#enu1#fld1"/>
+          <layout:Field field="sv1#area4#area5#area8#page1#enu1#fld2"/>
+          <layout:Field field="sv1#area4#area5#area8#page1#enu1#fld3"/>
+          <layout:Field field="sv1#area4#area5#area8#page1#enu1#fld23"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>

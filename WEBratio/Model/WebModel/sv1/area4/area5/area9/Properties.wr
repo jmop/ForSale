@@ -1,3 +1,25 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="4" gr:y="114" id="sv1#area4#area5#area9" name="GESTAO" landmark="true" defaultPage="sv1#area4#area5#area9#page2">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="336" id="sv1#area4#area5#area9" name="GESTAO" landmark="true" defaultPage="sv1#area4#area5#area9#page2">
+  <OperationUnits>
+    <ModifyUnit gr:x="220" gr:y="0" id="sv1#area4#area5#area9#mfu1" name="ModifyUnit1" entity="ent2">
+      <Selector id="sv1#area4#area5#area9#mfu1#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area5#area9#mfu1#su2#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area4#area5#area9#mfu1#oln2" name="OKLink2" to="sv1#area4#area5#area9#page2" automaticCoupling="true"/>
+      <KOLink id="sv1#area4#area5#area9#mfu1#kln2" name="KOLink2" to="sv1#area4#area5#page10" automaticCoupling="true"/>
+    </ModifyUnit>
+    <DeleteUnit gr:x="60" gr:y="0" id="sv1#area4#area5#area9#dlu1" name="DeleteUnit1" entity="ent2">
+      <Selector id="sv1#area4#area5#area9#dlu1#su4" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area5#area9#dlu1#su4#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area4#area5#area9#dlu1#oln3" name="OKLink3" to="sv1#area4#area5#area9#page2" automaticCoupling="true"/>
+      <KOLink id="sv1#area4#area5#area9#dlu1#kln3" name="KOLink3" to="sv1#area4#area5#page10" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit gr:x="0" gr:y="330" id="sv1#area4#area5#area9#mfu2" name="ModifyUnit2" entity="ent2">
+      <Selector id="sv1#area4#area5#area9#mfu2#su5" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area5#area9#mfu2#su5#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area4#area5#area9#mfu2#oln4" name="OKLink4" to="sv1#area4#area5#area9#page2" automaticCoupling="true"/>
+      <KOLink id="sv1#area4#area5#area9#mfu2#kln4" name="KOLink4" to="sv1#area4#area5#page10" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
 </Area>

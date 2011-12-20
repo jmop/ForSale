@@ -1,0 +1,45 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="154" gr:y="274" id="sv1#area4#area5#area9#page12" name="Castigar Utilizador">
+  <ContentUnits>
+    <EntryUnit id="sv1#area4#area5#area9#page12#enu8" name="Castigar Utilizador" linkOrder="sv1#area4#area5#area9#page12#enu8#ln18" gr:x="0" gr:y="80">
+      <Field id="sv1#area4#area5#area9#page12#enu8#fld21" name="nome" type="string" modifiable="false" preloaded="true" hidden="false"/>
+      <Field id="sv1#area4#area5#area9#page12#enu8#fld22" name="estado" type="boolean" modifiable="true" preloaded="true" hidden="false"/>
+      <Link id="sv1#area4#area5#area9#page12#enu8#ln18" name="Castigar" to="sv1#area4#area5#area9#mfu2" type="normal" validate="true">
+        <LinkParameter id="sv1#area4#area5#area9#page12#enu8#ln18#par30" name="estado_estado" source="sv1#area4#area5#area9#page12#enu8#fld22" target="sv1#area4#area5#area9#mfu2.ent2#att26"/>
+        <LinkParameter id="sv1#area4#area5#area9#page12#enu8#ln18#par31" name="nome_nome" source="sv1#area4#area5#area9#page12#enu8#fld21" target="sv1#area4#area5#area9#mfu2.ent2#att17"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="160" gr:y="0" id="sv1#area4#area5#area9#page12#seu3" name="Utilizador" entity="ent2">
+      <Selector id="sv1#area4#area5#area9#page12#seu3#su6" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area5#area9#page12#seu3#su6#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area4#area5#area9#page12#seu3#ln20" name="Link20" to="sv1#area4#area5#area9#page12#enu8" type="transport" validate="true">
+        <LinkParameter id="sv1#area4#area5#area9#page12#seu3#ln20#par28" name="estado_estado" source="ent2#att26Array" target="sv1#area4#area5#area9#page12#enu8#fld22_slot"/>
+        <LinkParameter id="sv1#area4#area5#area9#page12#seu3#ln20#par29" name="nome_nome" source="ent2#att17Array" target="sv1#area4#area5#area9#page12#enu8#fld21_slot"/>
+      </Link>
+      <Link id="sv1#area4#area5#area9#page12#seu3#ln21" name="Link21" to="sv1#area4#area5#area9#mfu2" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area5#area9#page12#enu8">
+          <layout:Link link="sv1#area4#area5#area9#page12#enu8#ln18"/>
+          <layout:Field field="sv1#area4#area5#area9#page12#enu8#fld21"/>
+          <layout:Field field="sv1#area4#area5#area9#page12#enu8#fld22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -59,12 +59,13 @@
     <Attribute id="ent1#att12" name="carrocaria" type="string" db:column="carrocaria"/>
     <Attribute id="ent1#att13" name="combustivel" type="string" db:column="combustivel"/>
   </Entity>
-  <Entity gr:x="240" gr:y="190" id="ent2" name="Utilizadores" duration="persistent" attributeOrder="ent2#att3 ent2#att17 ent2#att19 ent2#att20 ent2#att26" db:database="db1" db:table="utilizadores">
+  <Entity gr:x="240" gr:y="150" id="ent2" name="Utilizadores" duration="persistent" attributeOrder="ent2#att3 ent2#att17 ent2#att18 ent2#att19 ent2#att20 ent2#att26" db:database="db1" db:table="utilizadores">
     <Attribute id="ent2#att3" key="true" name="id_utilizador" type="integer" db:column="id_utilizador"/>
     <Attribute id="ent2#att17" name="nome" type="string" db:column="nome"/>
     <Attribute id="ent2#att19" name="email" type="string" db:column="email"/>
     <Attribute id="ent2#att20" name="telemovel" type="integer" db:column="telemovel"/>
     <Attribute id="ent2#att26" name="estado" type="boolean" db:column="estado"/>
+    <Attribute id="ent2#att18" name="password" type="string" db:column="password"/>
   </Entity>
   <Entity gr:x="660" gr:y="290" id="ent3" name="Fotografias" duration="persistent" attributeOrder="ent3#att4 ent3#att15 ent3#att16" db:database="db1" db:table="fotografias">
     <Attribute id="ent3#att4" key="true" name="id_foto" type="integer" db:column="id_foto"/>
