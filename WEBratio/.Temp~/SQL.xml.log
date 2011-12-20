@@ -1,0 +1,48 @@
+[20 Dez 2011 21:53:22] DEBUG Executing SQL script
+[20 Dez 2011 21:53:22] INFO ================================================================================
+[20 Dez 2011 21:53:22] INFO outputPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\SQL.xml'
+[20 Dez 2011 21:53:22] INFO onError= 'abort'
+[20 Dez 2011 21:53:22] INFO statementSeparator= ';'
+[20 Dez 2011 21:53:22] INFO derby.system.home= 'C:\WebRatio\WebRatio Personal 6.1.1\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[20 Dez 2011 21:53:22] INFO password= ''
+[20 Dez 2011 21:53:22] INFO url= 'jdbc:mysql://localhost:3306/ForSale'
+[20 Dez 2011 21:53:22] INFO username= 'root'
+[20 Dez 2011 21:53:22] INFO autoCommit= 'false'
+[20 Dez 2011 21:53:22] INFO outputLogPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\SQL.xml.log'
+[20 Dez 2011 21:53:22] INFO driverClass= 'com.mysql.jdbc.Driver'
+[20 Dez 2011 21:53:22] INFO encoding= ''
+[20 Dez 2011 21:53:22] INFO eventSocketPort= '50768'
+[20 Dez 2011 21:53:22] INFO sqlScript= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\DBScripts\ForSale_111220_215258.sql'
+[20 Dez 2011 21:53:22] INFO ================================================================================
+[20 Dez 2011 21:53:22] INFO Connecting to the Database...
+[20 Dez 2011 21:53:22] INFO Database connection estabilished
+[20 Dez 2011 21:53:22] INFO transaction isolation: 4
+[20 Dez 2011 21:53:22] DEBUG ================================================================================
+[20 Dez 2011 21:53:22] DEBUG Executing SQL script file: C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\DBScripts\ForSale_111220_215258.sql
+[20 Dez 2011 21:53:22] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
+[20 Dez 2011 21:53:22] ERROR Could not execute statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'group' already exists
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2618)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2568)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:842)
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:681)
+	at com.webratio.commons.db.utils.DBUtils.execute(DBUtils.java:523)
+	at com.webratio.commons.db.utils.DBUtils.executeScriptFiles(DBUtils.java:442)
+	at com.webratio.commons.db.utils.DBUtils.main(DBUtils.java:257)
+[20 Dez 2011 21:53:22] DEBUG Performing roolback...
+[20 Dez 2011 21:53:22] WARN NOTE: The rollback affects the DDL instructions only if supported by the current database
+[20 Dez 2011 21:53:22] DEBUG Rollback successfully executed
+[20 Dez 2011 21:53:22] ERROR SQL SCRIPT EXECUTION FAILED
+[20 Dez 2011 21:53:22] INFO Database connection closed
+[20 Dez 2011 21:53:22] DEBUG Total time: 416 milliseconds

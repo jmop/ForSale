@@ -1,8 +1,9 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="220" gr:y="-70" id="sv1#area1" name="HEADER" landmark="true" defaultPage="sv1#area1#lgu1">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="182" gr:y="-78" id="sv1#area1" name="HEADER" landmark="true" defaultPage="sv1#area1#lgu1" landmarks="sv1#area1#lou1">
   <OperationUnits>
-    <LoginUnit gr:x="162" gr:y="32" id="sv1#area1#lgu1" name="LoginUnit1" customDescriptor="false" protected="false" secure="false">
+    <LoginUnit gr:x="290" gr:y="20" id="sv1#area1#lgu1" name="LoginUnit1" customDescriptor="false" protected="false" secure="false">
       <KOLink id="sv1#area1#lgu1#kln5" name="KOLink5" to="sv1#area1#page6" automaticCoupling="true"/>
       <OKLink id="sv1#area1#lgu1#oln5" name="OKLink5" to="sv1#area4#area5#area9#page2" automaticCoupling="true"/>
     </LoginUnit>
+    <LogoutUnit gr:x="0" gr:y="20" id="sv1#area1#lou1" name="LogoutUnit1" siteView="sv1" landmark="true" protected="false"/>
   </OperationUnits>
 </Area>

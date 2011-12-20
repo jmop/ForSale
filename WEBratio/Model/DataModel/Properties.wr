@@ -1,9 +1,12 @@
 <DataModel xmlns:db="http://www.webratio.com/2006/WebML/Database" xmlns:gr="http://www.webratio.com/2006/WebML/Graph">
-  <Entity id="User" name="User" duration="persistent" gr:x="20" gr:y="20" gr:hideAttributes="false" attributeOrder="userOID userName password email" db:database="db1" db:table="user">
+  <Entity id="User" name="User" duration="persistent" gr:x="20" gr:y="20" gr:hideAttributes="false" attributeOrder="userOID User#att21 userName password email User#att27 User#att30" db:database="db1" db:table="user">
     <Attribute name="oid" id="userOID" type="integer" key="true" db:column="oid"/>
     <Attribute name="userName" id="userName" type="string" db:column="username"/>
     <Attribute name="password" id="password" type="password" db:column="password"/>
     <Attribute name="email" id="email" type="string" db:column="email"/>
+    <Attribute id="User#att21" name="nome" type="string" db:column="nome_2"/>
+    <Attribute id="User#att27" name="telemovel" type="integer" db:column="telemovel_2"/>
+    <Attribute id="User#att30" name="estado" type="boolean" db:column="estado_2"/>
   </Entity>
   <Entity id="Group" name="Group" duration="persistent" gr:x="250" gr:y="40" gr:hideAttributes="false" attributeOrder="groupOID groupName" db:database="db1" db:table="group">
     <Attribute name="oid" id="groupOID" type="integer" key="true" db:column="oid"/>
@@ -46,7 +49,7 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="470" gr:y="190" id="ent1" name="Anuncios" duration="persistent" attributeOrder="ent1#att1 ent1#att8 ent1#att2 ent1#att5 ent1#att6 ent1#att7 ent1#att9 ent1#att10 ent1#att11 ent1#att12 ent1#att13" db:database="db1" db:table="anuncios">
+  <Entity gr:x="320" gr:y="180" id="ent1" name="Anuncios" duration="persistent" attributeOrder="ent1#att1 ent1#att8 ent1#att2 ent1#att5 ent1#att6 ent1#att7 ent1#att9 ent1#att10 ent1#att11 ent1#att12 ent1#att13" db:database="db1" db:table="anuncios">
     <Attribute id="ent1#att1" key="true" name="id_anuncio" type="integer" db:column="id_anuncio"/>
     <Attribute id="ent1#att2" name="data" type="date" db:column="data"/>
     <Attribute id="ent1#att5" name="marca" type="string" db:column="marca"/>
@@ -59,32 +62,16 @@
     <Attribute id="ent1#att12" name="carrocaria" type="string" db:column="carrocaria"/>
     <Attribute id="ent1#att13" name="combustivel" type="string" db:column="combustivel"/>
   </Entity>
-  <Entity gr:x="240" gr:y="150" id="ent2" name="Utilizadores" duration="persistent" attributeOrder="ent2#att3 ent2#att17 ent2#att18 ent2#att19 ent2#att20 ent2#att26" db:database="db1" db:table="utilizadores">
-    <Attribute id="ent2#att3" key="true" name="id_utilizador" type="integer" db:column="id_utilizador"/>
-    <Attribute id="ent2#att17" name="nome" type="string" db:column="nome"/>
-    <Attribute id="ent2#att19" name="email" type="string" db:column="email"/>
-    <Attribute id="ent2#att20" name="telemovel" type="integer" db:column="telemovel"/>
-    <Attribute id="ent2#att26" name="estado" type="boolean" db:column="estado"/>
-    <Attribute id="ent2#att18" name="password" type="string" db:column="password"/>
-  </Entity>
   <Entity gr:x="660" gr:y="290" id="ent3" name="Fotografias" duration="persistent" attributeOrder="ent3#att4 ent3#att15 ent3#att16" db:database="db1" db:table="fotografias">
     <Attribute id="ent3#att4" key="true" name="id_foto" type="integer" db:column="id_foto"/>
     <Attribute id="ent3#att15" name="nome" type="string" db:column="nome"/>
     <Attribute id="ent3#att16" name="foto" type="blob" db:column="foto"/>
   </Entity>
-  <Entity gr:x="230" gr:y="390" id="ent4" name="Comentarios" duration="persistent" attributeOrder="ent4#att14 ent4#att22 ent4#att23" db:database="db1" db:table="comentarios">
+  <Entity gr:x="30" gr:y="340" id="ent4" name="Comentarios" duration="persistent" attributeOrder="ent4#att14 ent4#att22 ent4#att23" db:database="db1" db:table="comentarios">
     <Attribute id="ent4#att14" key="true" name="id_comentario" type="integer" db:column="id_comentario"/>
     <Attribute id="ent4#att22" name="comentario" type="string" db:column="comentario"/>
     <Attribute id="ent4#att23" name="estado" type="boolean" db:column="estado"/>
   </Entity>
-  <Relationship id="rel1" name="Users_Anuncios" sourceEntity="ent2" targetEntity="ent1" db:database="db1" db:table="utilizadores">
-    <RelationshipRole1 id="rel1#role1" name="UsersToAnuncios" maxCard="1">
-      <db:JoinColumn attribute="ent2#att3" name="id_utilizador"/>
-    </RelationshipRole1>
-    <RelationshipRole2 id="rel1#role2" name="AnunciosToUsers" maxCard="N">
-      <db:JoinColumn attribute="ent1#att1" name="anuncios_id_anuncio"/>
-    </RelationshipRole2>
-  </Relationship>
   <Relationship id="rel2" name="Anuncios_Fotografias" sourceEntity="ent1" targetEntity="ent3" db:database="db1" db:table="anuncios">
     <RelationshipRole1 id="rel2#role3" name="AnunciosToFotografias" maxCard="1">
       <db:JoinColumn attribute="ent1#att1" name="id_anuncio"/>
@@ -101,37 +88,22 @@
       <db:JoinColumn attribute="ent4#att14" name="comentarios_id_comentario"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel4" name="Users_Comentarios" sourceEntity="ent2" targetEntity="ent4" db:database="db1" db:table="utilizadores">
-    <RelationshipRole1 id="rel4#role7" name="UsersToComentarios" maxCard="1">
-      <db:JoinColumn attribute="ent2#att3" name="id_utilizador"/>
+  <db:Database id="db1" name="ForSale" type="MySQL" url="jdbc:mysql://localhost:3306/ForSale" username="root">
+  </db:Database>
+  <Relationship id="rel6" name="User_Anuncios" sourceEntity="User" targetEntity="ent1" db:database="db1" db:table="user">
+    <RelationshipRole1 id="rel6#role11" name="UserToAnuncios" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="oid"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel4#role8" name="ComentariosToUsers" maxCard="N">
+    <RelationshipRole2 id="rel6#role12" name="AnunciosToUser" maxCard="N">
+      <db:JoinColumn attribute="ent1#att1" name="anuncios_id_anuncio"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel7" name="User_Comentarios" sourceEntity="User" targetEntity="ent4" db:database="db1" db:table="user">
+    <RelationshipRole1 id="rel7#role13" name="UserToComentarios" maxCard="1">
+      <db:JoinColumn attribute="userOID" name="oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel7#role14" name="ComentariosToUser" maxCard="N">
       <db:JoinColumn attribute="ent4#att14" name="comentarios_id_comentario"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="30" gr:y="230" id="ent5" name="Tipo de Utilizador" duration="persistent" attributeOrder="ent5#att24 ent5#att25" db:database="db1" db:table="tipo_de_utilizador">
-    <Attribute id="ent5#att24" key="true" name="id_tipo" type="integer" db:column="id_tipo"/>
-    <Attribute id="ent5#att25" name="descricao" type="string" db:column="descricao"/>
-  </Entity>
-  <Relationship id="rel5" name="Utilizadores_Permissoes" sourceEntity="ent2" targetEntity="ent5" db:database="db1" db:table="tipo_de_utilizador">
-    <RelationshipRole1 id="rel5#role9" name="UtilizadoresToPermissoes" maxCard="N">
-      <db:JoinColumn attribute="ent2#att3" name="utilizadores_id_utilizador"/>
-    </RelationshipRole1>
-    <RelationshipRole2 id="rel5#role10" name="PermissoesToUtilizadores" maxCard="1">
-      <db:JoinColumn attribute="ent5#att24" name="id_tipo"/>
-    </RelationshipRole2>
-  </Relationship>
-  <Entity gr:x="20" gr:y="390" id="ent7" name="Permissoes" duration="persistent" attributeOrder="ent7#att28 ent7#att29" db:database="db1" db:table="permissoes">
-    <Attribute id="ent7#att28" key="true" name="id_permissao" type="integer" db:column="id_permissao"/>
-    <Attribute id="ent7#att29" name="nome" type="string" db:column="nome"/>
-  </Entity>
-  <Relationship id="rel7" name="Tipo de Utilizador_Permissoes" sourceEntity="ent5" targetEntity="ent7" db:database="db1" db:table="tipo_de_utilizador_permissoes">
-    <RelationshipRole1 id="rel7#role13" name="Tipo de UtilizadorToPermissoes" maxCard="N">
-      <db:JoinColumn attribute="ent5#att24" name="tipo_de_utilizador_id_tipo"/>
-    </RelationshipRole1>
-    <RelationshipRole2 id="rel7#role14" name="PermissoesToTipo de Utilizador" maxCard="N">
-      <db:JoinColumn attribute="ent7#att28" name="permissoes_id_permissao"/>
-    </RelationshipRole2>
-  </Relationship>
-  <db:Database id="db1" name="ForSale" type="MySQL" url="jdbc:mysql://localhost:3306/ForSale" username="root"/>
 </DataModel>

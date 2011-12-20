@@ -1,26 +1,32 @@
-[20 Dez 2011 18:54:50] DEBUG Executing SQL script
-[20 Dez 2011 18:54:50] INFO ================================================================================
-[20 Dez 2011 18:54:50] INFO outputPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.xml'
-[20 Dez 2011 18:54:50] INFO onError= 'continue'
-[20 Dez 2011 18:54:50] INFO statementSeparator= ';'
-[20 Dez 2011 18:54:50] INFO derby.system.home= 'C:\WebRatio\WebRatio Personal 6.1.1\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[20 Dez 2011 18:54:50] INFO password= ''
-[20 Dez 2011 18:54:50] INFO url= 'jdbc:mysql://localhost:3306/ForSale'
-[20 Dez 2011 18:54:50] INFO username= 'root'
-[20 Dez 2011 18:54:50] INFO autoCommit= 'false'
-[20 Dez 2011 18:54:50] INFO outputLogPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.xml.log'
-[20 Dez 2011 18:54:50] INFO driverClass= 'com.mysql.jdbc.Driver'
-[20 Dez 2011 18:54:50] INFO encoding= ''
-[20 Dez 2011 18:54:50] INFO eventSocketPort= '50226'
-[20 Dez 2011 18:54:50] INFO sqlScript= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.sql'
-[20 Dez 2011 18:54:50] INFO ================================================================================
-[20 Dez 2011 18:54:50] INFO Connecting to the Database...
-[20 Dez 2011 18:54:50] INFO Database connection estabilished
-[20 Dez 2011 18:54:50] INFO transaction isolation: 4
-[20 Dez 2011 18:54:50] DEBUG ================================================================================
-[20 Dez 2011 18:54:50] DEBUG Executing SQL script file: C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.sql
-[20 Dez 2011 18:54:50] DEBUG Executing statement:  alter table `utilizadores`  add column  `password`  varchar(255)
-[20 Dez 2011 18:54:50] DEBUG ================================================================================
-[20 Dez 2011 18:54:50] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[20 Dez 2011 18:54:50] INFO Database connection closed
-[20 Dez 2011 18:54:50] DEBUG Total time: 490 milliseconds
+[20 Dez 2011 22:03:01] DEBUG Executing SQL script
+[20 Dez 2011 22:03:01] INFO ================================================================================
+[20 Dez 2011 22:03:01] INFO outputPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.xml'
+[20 Dez 2011 22:03:01] INFO onError= 'continue'
+[20 Dez 2011 22:03:01] INFO statementSeparator= ';'
+[20 Dez 2011 22:03:01] INFO derby.system.home= 'C:\WebRatio\WebRatio Personal 6.1.1\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[20 Dez 2011 22:03:01] INFO password= ''
+[20 Dez 2011 22:03:01] INFO url= 'jdbc:mysql://localhost:3306/ForSale'
+[20 Dez 2011 22:03:01] INFO username= 'root'
+[20 Dez 2011 22:03:01] INFO autoCommit= 'false'
+[20 Dez 2011 22:03:01] INFO outputLogPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.xml.log'
+[20 Dez 2011 22:03:01] INFO driverClass= 'com.mysql.jdbc.Driver'
+[20 Dez 2011 22:03:01] INFO encoding= ''
+[20 Dez 2011 22:03:01] INFO eventSocketPort= '50843'
+[20 Dez 2011 22:03:01] INFO sqlScript= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.sql'
+[20 Dez 2011 22:03:01] INFO ================================================================================
+[20 Dez 2011 22:03:01] INFO Connecting to the Database...
+[20 Dez 2011 22:03:01] INFO Database connection estabilished
+[20 Dez 2011 22:03:01] INFO transaction isolation: 4
+[20 Dez 2011 22:03:01] DEBUG ================================================================================
+[20 Dez 2011 22:03:01] DEBUG Executing SQL script file: C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.sql
+[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`  add column  `nome_2`  varchar(255)
+[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`  add column  `telemovel_2`  integer
+[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`  add column  `estado_2`  bit
+[20 Dez 2011 22:03:01] DEBUG Executing statement:    alter table `user`  add column  `anuncios_id_anuncio`  integer
+[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`   add index fk_user_anuncios (`anuncios_id_anuncio`), add constraint fk_user_anuncios foreign key (`anuncios_id_anuncio`) references `anuncios` (`id_anuncio`)
+[20 Dez 2011 22:03:01] DEBUG Executing statement:    alter table `user`  add column  `comentarios_id_comentario`  integer
+[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`   add index fk_user_comentarios (`comentarios_id_comentario`), add constraint fk_user_comentarios foreign key (`comentarios_id_comentario`) references `comentarios` (`id_comentario`)
+[20 Dez 2011 22:03:02] DEBUG ================================================================================
+[20 Dez 2011 22:03:02] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[20 Dez 2011 22:03:02] INFO Database connection closed
+[20 Dez 2011 22:03:02] DEBUG Total time: 630 milliseconds

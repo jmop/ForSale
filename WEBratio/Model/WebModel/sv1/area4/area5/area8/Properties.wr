@@ -1,6 +1,6 @@
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="14" gr:y="0" id="sv1#area4#area5#area8" name="REGISTO" landmark="true" defaultPage="sv1#area4#area5#area8#page1">
   <OperationUnits>
-    <CreateUnit gr:x="136" gr:y="6" id="sv1#area4#area5#area8#cru2" name="CreateUser" entity="ent2">
+    <CreateUnit gr:x="136" gr:y="6" id="sv1#area4#area5#area8#cru2" name="CreateUser" entity="User">
       <OKLink id="sv1#area4#area5#area8#cru2#oln1" name="OKLink1" to="sv1#area4#area5#area8#page1" automaticCoupling="true"/>
       <KOLink id="sv1#area4#area5#area8#cru2#kln1" name="KOLink1" to="sv1#area4#area5#page10" automaticCoupling="true"/>
     </CreateUnit>
