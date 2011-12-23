@@ -1,13 +1,69 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area4#area6#area10#page3" name="Pesquisar">
-  <ContentUnits/>
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv1#area4#area6#area10#page3#inu4" name="lista" entity="ent1" displayAttributes="ent1#att8 ent1#att2 ent1#att5 ent1#att6" linkOrder="sv1#area4#area6#area10#page3#inu4#ln34">
+      <Selector id="sv1#area4#area6#area10#page3#inu4#su8" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond1" name="titulo" predicate="contains" booleanOperator="and" implied="true" attributes="ent1#att8" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond2" name="cilindrada" predicate="contains" booleanOperator="and" implied="true" attributes="ent1#att9" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond3" name="ano" predicate="contains" booleanOperator="and" implied="true" attributes="ent1#att18" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond4" name="carrocaria" predicate="contains" booleanOperator="and" implied="true" attributes="ent1#att12" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond5" name="combustivel" predicate="contains" booleanOperator="and" implied="true" attributes="ent1#att13" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond6" name="cor" predicate="contains" booleanOperator="and" implied="true" attributes="ent1#att10" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond7" name="marca" predicate="contains" booleanOperator="and" implied="true" ignoreCase="true" attributes="ent1#att5"/>
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond8" name="modelo" predicate="contains" booleanOperator="and" implied="true" attributes="ent1#att6" ignoreCase="true"/>
+        <AttributesCondition id="sv1#area4#area6#area10#page3#inu4#su8#acond9" name="tipo" predicate="contains" booleanOperator="and" implied="true" attributes="ent1#att11" ignoreCase="true"/>
+      </Selector>
+      <Link id="sv1#area4#area6#area10#page3#inu4#ln34" name="ver" to="sv1#area4#area6#page8#dau1" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+    <MultiEntryUnit gr:x="206" gr:y="16" id="sv1#area4#area6#area10#page3#meu1" name="Filtros de Pesquisa" minLength="1" linkOrder="sv1#area4#area6#area10#page3#meu1#ln5">
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld70" name="titulo" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld72" name="marca" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld73" name="modelo" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld75" name="cilindrada" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld76" name="cor" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld77" name="tipo" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld78" name="carrocaria" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld79" name="combustivel" type="string" modifiable="true"/>
+      <Field id="sv1#area4#area6#area10#page3#meu1#fld82" name="ano" type="integer" modifiable="true"/>
+      <Link id="sv1#area4#area6#area10#page3#meu1#ln5" name="Pesquisar" to="sv1#area4#area6#area10#page3#inu4" type="normal" customDescriptor="false" validate="true">
+        <LinkParameter id="sv1#area4#area6#area10#page3#meu1#ln5#par73" name="titulo_AttCondition1" source="sv1#area4#area6#area10#page3#meu1#fld70" target="sv1#area4#area6#area10#page3#inu4#su8#acond1"/>
+        <LinkParameter id="sv1#area4#area6#area10#page3#meu1#ln5#par74" name="cilindrada_cilindrada" source="sv1#area4#area6#area10#page3#meu1#fld75" target="sv1#area4#area6#area10#page3#inu4#su8#acond2"/>
+        <LinkParameter id="sv1#area4#area6#area10#page3#meu1#ln5#par75" name="ano_ano" source="sv1#area4#area6#area10#page3#meu1#fld82" target="sv1#area4#area6#area10#page3#inu4#su8#acond3"/>
+        <LinkParameter id="sv1#area4#area6#area10#page3#meu1#ln5#par76" name="carrocaria_carrocaria" source="sv1#area4#area6#area10#page3#meu1#fld78" target="sv1#area4#area6#area10#page3#inu4#su8#acond4"/>
+        <LinkParameter id="sv1#area4#area6#area10#page3#meu1#ln5#par77" name="combustivel_combustivel" source="sv1#area4#area6#area10#page3#meu1#fld79" target="sv1#area4#area6#area10#page3#inu4#su8#acond5"/>
+        <LinkParameter id="sv1#area4#area6#area10#page3#meu1#ln5#par78" name="cor_cor" source="sv1#area4#area6#area10#page3#meu1#fld76" target="sv1#area4#area6#area10#page3#inu4#su8#acond6"/>
+        <LinkParameter id="sv1#area4#area6#area10#page3#meu1#ln5#par79" name="marca_marca" source="sv1#area4#area6#area10#page3#meu1#fld72" target="sv1#area4#area6#area10#page3#inu4#su8#acond7"/>
+      </Link>
+    </MultiEntryUnit>
+  </ContentUnits>
   <layout:Grid>
     <layout:Row>
-      <layout:Cell/>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area6#area10#page3#meu1">
+          <layout:Link link="sv1#area4#area6#area10#page3#meu1#ln5"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld70"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld72"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld73"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld75"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld76"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld77"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld78"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld79"/>
+          <layout:Field field="sv1#area4#area6#area10#page3#meu1#fld82"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell/>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area6#area10#page3#inu4">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att2"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Link link="sv1#area4#area6#area10#page3#inu4#ln34"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>

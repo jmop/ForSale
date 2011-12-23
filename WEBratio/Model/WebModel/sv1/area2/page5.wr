@@ -1,9 +1,35 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area2#page5" name="Pre-Pesquisa">
-  <ContentUnits/>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area2#page5" name="Pre-Pesquisa" landmark="true">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area2#page5#enu4" name="EntryUnit4" linkOrder="sv1#area2#page5#enu4#ln17">
+      <Field id="sv1#area2#page5#enu4#fld31" name="nome" type="string" modifiable="true"/>
+      <Field id="sv1#area2#page5#enu4#fld32" name="foto" type="blob" modifiable="true"/>
+      <Link id="sv1#area2#page5#enu4#ln17" name="+" to="sv1#cru3" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#page5#enu4#ln17#par43" name="foto_foto" source="sv1#area2#page5#enu4#fld32" target="sv1#cru3.ent3#att16"/>
+        <LinkParameter id="sv1#area2#page5#enu4#ln17#par44" name="foto_foto [file name]" source="sv1#area2#page5#enu4#fld32" target="sv1#cru3.ent3#att16_name"/>
+        <LinkParameter id="sv1#area2#page5#enu4#ln17#par45" name="nome_nome" source="sv1#area2#page5#enu4#fld31" target="sv1#cru3.ent3#att15"/>
+      </Link>
+    </EntryUnit>
+    <DataUnit gr:x="86" gr:y="43" id="sv1#area2#page5#dau3" name="DataUnit3" entity="ent3" displayAll="true">
+      <Selector id="sv1#area2#page5#dau3#su12" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area2#page5#dau3#su12#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
   <layout:Grid>
     <layout:Row>
-      <layout:Cell/>
-      <layout:Cell/>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area2#page5#enu4">
+          <layout:Field field="sv1#area2#page5#enu4#fld31"/>
+          <layout:Field field="sv1#area2#page5#enu4#fld32"/>
+          <layout:Link link="sv1#area2#page5#enu4#ln17"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area2#page5#dau3">
+          <layout:Attribute attribute="ent3#att15"/>
+          <layout:Attribute attribute="ent3#att16"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
@@ -17,4 +43,6 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <layout:LayoutParameter name="use-icon-extensions" value="true" type="attribute"/>
+  <layout:LayoutParameter name="icon-extension" value="jpg" type="attribute"/>
 </Page>

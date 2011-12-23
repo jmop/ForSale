@@ -49,7 +49,7 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="320" gr:y="180" id="ent1" name="Anuncios" duration="persistent" attributeOrder="ent1#att1 ent1#att8 ent1#att2 ent1#att5 ent1#att6 ent1#att7 ent1#att9 ent1#att10 ent1#att11 ent1#att12 ent1#att13" db:database="db1" db:table="anuncios">
+  <Entity gr:x="320" gr:y="180" id="ent1" name="Anuncios" duration="persistent" attributeOrder="ent1#att1 ent1#att8 ent1#att2 ent1#att5 ent1#att6 ent1#att7 ent1#att9 ent1#att10 ent1#att11 ent1#att12 ent1#att13 ent1#att3 ent1#att17 ent1#att18" db:database="db1" db:table="anuncios">
     <Attribute id="ent1#att1" key="true" name="id_anuncio" type="integer" db:column="id_anuncio"/>
     <Attribute id="ent1#att2" name="data" type="date" db:column="data"/>
     <Attribute id="ent1#att5" name="marca" type="string" db:column="marca"/>
@@ -61,6 +61,9 @@
     <Attribute id="ent1#att11" name="tipo" type="string" db:column="tipo"/>
     <Attribute id="ent1#att12" name="carrocaria" type="string" db:column="carrocaria"/>
     <Attribute id="ent1#att13" name="combustivel" type="string" db:column="combustivel"/>
+    <Attribute id="ent1#att3" name="preco" type="float" db:column="preco"/>
+    <Attribute id="ent1#att17" name="km" type="float" db:column="km"/>
+    <Attribute id="ent1#att18" name="ano" type="integer" db:column="ano"/>
   </Entity>
   <Entity gr:x="660" gr:y="290" id="ent3" name="Fotografias" duration="persistent" attributeOrder="ent3#att4 ent3#att15 ent3#att16" db:database="db1" db:table="fotografias">
     <Attribute id="ent3#att4" key="true" name="id_foto" type="integer" db:column="id_foto"/>
@@ -72,37 +75,28 @@
     <Attribute id="ent4#att22" name="comentario" type="string" db:column="comentario"/>
     <Attribute id="ent4#att23" name="estado" type="boolean" db:column="estado"/>
   </Entity>
-  <Relationship id="rel2" name="Anuncios_Fotografias" sourceEntity="ent1" targetEntity="ent3" db:database="db1" db:table="anuncios">
-    <RelationshipRole1 id="rel2#role3" name="AnunciosToFotografias" maxCard="1">
+  <db:Database id="db1" name="ForSale" type="MySQL" url="jdbc:mysql://localhost:3306/test" username="root"/>
+  <Relationship id="rel9" name="Anuncios_User" sourceEntity="ent1" targetEntity="User" db:database="db1" db:table="anuncios">
+    <RelationshipRole1 id="rel9#role17" name="AnunciosToUser" maxCard="1">
       <db:JoinColumn attribute="ent1#att1" name="id_anuncio"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel2#role4" name="FotografiasToAnuncios" maxCard="N">
+    <RelationshipRole2 id="rel9#role18" name="UserToAnuncios" maxCard="N">
+      <db:JoinColumn attribute="userOID" name="user_oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel10" name="Anuncios_Fotografias" sourceEntity="ent1" targetEntity="ent3" db:database="db1" db:table="anuncios_fotografias">
+    <RelationshipRole1 id="rel10#role19" name="AnunciosToFotografias" maxCard="N">
+      <db:JoinColumn attribute="ent1#att1" name="anuncios_id_anuncio"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel10#role20" name="FotografiasToAnuncios" maxCard="N">
       <db:JoinColumn attribute="ent3#att4" name="fotografias_id_foto"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel3" name="Anuncios_Comentarios" sourceEntity="ent1" targetEntity="ent4" db:database="db1" db:table="anuncios">
-    <RelationshipRole1 id="rel3#role5" name="AnunciosToComentarios" maxCard="1">
-      <db:JoinColumn attribute="ent1#att1" name="id_anuncio"/>
-    </RelationshipRole1>
-    <RelationshipRole2 id="rel3#role6" name="ComentariosToAnuncios" maxCard="N">
-      <db:JoinColumn attribute="ent4#att14" name="comentarios_id_comentario"/>
-    </RelationshipRole2>
-  </Relationship>
-  <db:Database id="db1" name="ForSale" type="MySQL" url="jdbc:mysql://localhost:3306/ForSale" username="root">
-  </db:Database>
-  <Relationship id="rel6" name="User_Anuncios" sourceEntity="User" targetEntity="ent1" db:database="db1" db:table="user">
-    <RelationshipRole1 id="rel6#role11" name="UserToAnuncios" maxCard="1">
-      <db:JoinColumn attribute="userOID" name="oid"/>
-    </RelationshipRole1>
-    <RelationshipRole2 id="rel6#role12" name="AnunciosToUser" maxCard="N">
+  <Relationship id="rel11" name="Anuncios_Comentarios" sourceEntity="ent1" targetEntity="ent4" db:database="db1" db:table="anuncios_comentarios">
+    <RelationshipRole1 id="rel11#role21" name="AnunciosToComentarios" maxCard="N">
       <db:JoinColumn attribute="ent1#att1" name="anuncios_id_anuncio"/>
-    </RelationshipRole2>
-  </Relationship>
-  <Relationship id="rel7" name="User_Comentarios" sourceEntity="User" targetEntity="ent4" db:database="db1" db:table="user">
-    <RelationshipRole1 id="rel7#role13" name="UserToComentarios" maxCard="1">
-      <db:JoinColumn attribute="userOID" name="oid"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel7#role14" name="ComentariosToUser" maxCard="N">
+    <RelationshipRole2 id="rel11#role22" name="ComentariosToAnuncios" maxCard="N">
       <db:JoinColumn attribute="ent4#att14" name="comentarios_id_comentario"/>
     </RelationshipRole2>
   </Relationship>

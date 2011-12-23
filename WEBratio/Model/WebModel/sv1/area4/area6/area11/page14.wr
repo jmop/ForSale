@@ -1,0 +1,89 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="182" gr:y="310" id="sv1#area4#area6#area11#page14" name="Modificar Anuncio">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="132" id="sv1#area4#area6#area11#page14#enu5" name="Dados Anuncio" linkOrder="sv1#area4#area6#area11#page14#enu5#ln26">
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld33" name="titulo" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld34" name="data" type="date" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld35" name="marca" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld36" name="modelo" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld37" name="descricao" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld38" name="cilindrada" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld39" name="cor" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld40" name="tipo" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld41" name="carrocaria" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld42" name="combustivel" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld43" name="preco" type="float" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld44" name="km" type="float" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page14#enu5#fld45" name="ano" type="integer" modifiable="true" preloaded="true"/>
+      <Link id="sv1#area4#area6#area11#page14#enu5#ln26" name="editar" to="sv1#area4#area6#area11#mfu3" type="normal" validate="true">
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par59" name="ano_ano" source="sv1#area4#area6#area11#page14#enu5#fld45" target="sv1#area4#area6#area11#mfu3.ent1#att18"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par60" name="carrocaria_carrocaria" source="sv1#area4#area6#area11#page14#enu5#fld41" target="sv1#area4#area6#area11#mfu3.ent1#att12"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par61" name="cilindrada_cilindrada" source="sv1#area4#area6#area11#page14#enu5#fld38" target="sv1#area4#area6#area11#mfu3.ent1#att9"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par62" name="combustivel_combustivel" source="sv1#area4#area6#area11#page14#enu5#fld42" target="sv1#area4#area6#area11#mfu3.ent1#att13"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par63" name="cor_cor" source="sv1#area4#area6#area11#page14#enu5#fld39" target="sv1#area4#area6#area11#mfu3.ent1#att10"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par64" name="data_data" source="sv1#area4#area6#area11#page14#enu5#fld34" target="sv1#area4#area6#area11#mfu3.ent1#att2"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par65" name="descricao_descricao" source="sv1#area4#area6#area11#page14#enu5#fld37" target="sv1#area4#area6#area11#mfu3.ent1#att7"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par66" name="km_km" source="sv1#area4#area6#area11#page14#enu5#fld44" target="sv1#area4#area6#area11#mfu3.ent1#att17"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par67" name="marca_marca" source="sv1#area4#area6#area11#page14#enu5#fld35" target="sv1#area4#area6#area11#mfu3.ent1#att5"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par68" name="modelo_modelo" source="sv1#area4#area6#area11#page14#enu5#fld36" target="sv1#area4#area6#area11#mfu3.ent1#att6"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par69" name="preco_preco" source="sv1#area4#area6#area11#page14#enu5#fld43" target="sv1#area4#area6#area11#mfu3.ent1#att3"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par70" name="tipo_tipo" source="sv1#area4#area6#area11#page14#enu5#fld40" target="sv1#area4#area6#area11#mfu3.ent1#att11"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#enu5#ln26#par71" name="titulo_titulo" source="sv1#area4#area6#area11#page14#enu5#fld33" target="sv1#area4#area6#area11#mfu3.ent1#att8"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="6" gr:y="0" id="sv1#area4#area6#area11#page14#seu1" name="SelectorUnit1" entity="ent1">
+      <Selector id="sv1#area4#area6#area11#page14#seu1#su13" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area6#area11#page14#seu1#su13#kcond9" name="KeyCondition9" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area4#area6#area11#page14#seu1#ln24" name="Link24" to="sv1#area4#area6#area11#mfu3" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area4#area6#area11#page14#seu1#ln25" name="Link25" to="sv1#area4#area6#area11#page14#enu5" type="transport" validate="true">
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par46" name="ano_ano" source="ent1#att18Array" target="sv1#area4#area6#area11#page14#enu5#fld45_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par47" name="carrocaria_carrocaria" source="ent1#att12Array" target="sv1#area4#area6#area11#page14#enu5#fld41_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par48" name="cilindrada_cilindrada" source="ent1#att9Array" target="sv1#area4#area6#area11#page14#enu5#fld38_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par49" name="combustivel_combustivel" source="ent1#att13Array" target="sv1#area4#area6#area11#page14#enu5#fld42_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par50" name="cor_cor" source="ent1#att10Array" target="sv1#area4#area6#area11#page14#enu5#fld39_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par51" name="data_data" source="ent1#att2Array" target="sv1#area4#area6#area11#page14#enu5#fld34_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par52" name="descricao_descricao" source="ent1#att7Array" target="sv1#area4#area6#area11#page14#enu5#fld37_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par53" name="km_km" source="ent1#att17Array" target="sv1#area4#area6#area11#page14#enu5#fld44_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par54" name="marca_marca" source="ent1#att5Array" target="sv1#area4#area6#area11#page14#enu5#fld35_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par55" name="modelo_modelo" source="ent1#att6Array" target="sv1#area4#area6#area11#page14#enu5#fld36_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par56" name="preco_preco" source="ent1#att3Array" target="sv1#area4#area6#area11#page14#enu5#fld43_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par57" name="tipo_tipo" source="ent1#att11Array" target="sv1#area4#area6#area11#page14#enu5#fld40_slot"/>
+        <LinkParameter id="sv1#area4#area6#area11#page14#seu1#ln25#par58" name="titulo_titulo" source="ent1#att8Array" target="sv1#area4#area6#area11#page14#enu5#fld33_slot"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area6#area11#page14#enu5">
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld33"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld34"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld35"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld36"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld37"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld38"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld39"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld40"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld41"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld42"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld43"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld44"/>
+          <layout:Field field="sv1#area4#area6#area11#page14#enu5#fld45"/>
+          <layout:Link link="sv1#area4#area6#area11#page14#enu5#ln26"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

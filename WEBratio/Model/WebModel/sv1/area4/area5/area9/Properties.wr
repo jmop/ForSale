@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="336" id="sv1#area4#area5#area9" name="GESTAO" landmark="true" defaultPage="sv1#area4#area5#area9#page2">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="336" id="sv1#area4#area5#area9" name="GESTAO" landmark="false" defaultPage="sv1#area4#area5#area9#page2" landmarks="sv1#area4#area5#area9#page2">
   <OperationUnits>
     <ModifyUnit gr:x="220" gr:y="0" id="sv1#area4#area5#area9#mfu1" name="ModifyUnit1" entity="User">
       <Selector id="sv1#area4#area5#area9#mfu1#su2" defaultPolicy="fill" booleanOperator="and">
@@ -14,7 +14,7 @@
       <OKLink id="sv1#area4#area5#area9#dlu1#oln3" name="OKLink3" to="sv1#area4#area5#area9#page2" automaticCoupling="true"/>
       <KOLink id="sv1#area4#area5#area9#dlu1#kln3" name="KOLink3" to="sv1#area4#area5#page10" automaticCoupling="true"/>
     </DeleteUnit>
-    <ModifyUnit gr:x="0" gr:y="330" id="sv1#area4#area5#area9#mfu2" name="ModifyUnit2" entity="User">
+    <ModifyUnit gr:x="0" gr:y="330" id="sv1#area4#area5#area9#mfu2" name="Alterar Castigo" entity="User">
       <Selector id="sv1#area4#area5#area9#mfu2#su5" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area4#area5#area9#mfu2#su5#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
       </Selector>

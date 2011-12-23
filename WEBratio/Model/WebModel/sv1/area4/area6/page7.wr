@@ -1,8 +1,25 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="132" gr:y="2" id="sv1#area4#area6#page7" name="Anuncios">
-  <ContentUnits/>
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="2" gr:y="360" id="sv1#area4#area6#page7" name="Anuncios" landmark="true" protected="false" linkOrder="sv1#area4#area6#page7#ln22" secure="false">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv1#area4#area6#page7#inu2" name="Todos os Anuncios" entity="ent1" displayAttributes="ent1#att8 ent1#att2 ent1#att5 ent1#att6 ent1#att9 ent1#att13 ent1#att3 ent1#att17 ent1#att18" linkOrder="sv1#area4#area6#page7#inu2#ln3">
+      <Link id="sv1#area4#area6#page7#inu2#ln3" name="Detalhes" to="sv1#area4#area6#page8#dau1" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
   <layout:Grid>
     <layout:Row>
-      <layout:Cell/>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area6#page7#inu2">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att2"/>
+          <layout:Attribute attribute="ent1#att5"/>
+          <layout:Attribute attribute="ent1#att6"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att13"/>
+          <layout:Attribute attribute="ent1#att3"/>
+          <layout:Attribute attribute="ent1#att17"/>
+          <layout:Attribute attribute="ent1#att18"/>
+          <layout:Link link="sv1#area4#area6#page7#inu2#ln3"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
     </layout:Row>
@@ -17,4 +34,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#area4#area6#page7#ln22" name="Os Meus Anuncios" to="sv1#area4#area6#area11#page4" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="154" gr:y="274" id="sv1#area4#area5#area9#page12" name="Castigar Utilizador">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="154" gr:y="274" id="sv1#area4#area5#area9#page12" name="Castigar Utilizador" protected="true">
   <ContentUnits>
     <EntryUnit id="sv1#area4#area5#area9#page12#enu8" name="Castigar Utilizador" linkOrder="sv1#area4#area5#area9#page12#enu8#ln18" gr:x="0" gr:y="80">
       <Link id="sv1#area4#area5#area9#page12#enu8#ln18" name="Castigar" to="sv1#area4#area5#area9#mfu2" type="normal" validate="true">

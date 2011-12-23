@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area4#area5#area8#page1" name="Registar">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area4#area5#area8#page1" name="Registar" landmark="true" linkOrder="sv1#area4#area5#area8#page1#ln7">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv1#area4#area5#area8#page1#enu1" name="Registo" linkOrder="sv1#area4#area5#area8#page1#enu1#ln2">
       <Link id="sv1#area4#area5#area8#page1#enu1#ln2" name="Registar" to="sv1#area4#area5#area8#cru2" type="normal" validate="true">
@@ -43,4 +43,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#area4#area5#area8#page1#ln7" name="Login" to="sv1#area1#page6" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="64,-132,-36,142"/>
 </Page>

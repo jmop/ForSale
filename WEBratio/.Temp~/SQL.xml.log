@@ -1,48 +1,47 @@
-[20 Dez 2011 21:53:22] DEBUG Executing SQL script
-[20 Dez 2011 21:53:22] INFO ================================================================================
-[20 Dez 2011 21:53:22] INFO outputPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\SQL.xml'
-[20 Dez 2011 21:53:22] INFO onError= 'abort'
-[20 Dez 2011 21:53:22] INFO statementSeparator= ';'
-[20 Dez 2011 21:53:22] INFO derby.system.home= 'C:\WebRatio\WebRatio Personal 6.1.1\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[20 Dez 2011 21:53:22] INFO password= ''
-[20 Dez 2011 21:53:22] INFO url= 'jdbc:mysql://localhost:3306/ForSale'
-[20 Dez 2011 21:53:22] INFO username= 'root'
-[20 Dez 2011 21:53:22] INFO autoCommit= 'false'
-[20 Dez 2011 21:53:22] INFO outputLogPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\SQL.xml.log'
-[20 Dez 2011 21:53:22] INFO driverClass= 'com.mysql.jdbc.Driver'
-[20 Dez 2011 21:53:22] INFO encoding= ''
-[20 Dez 2011 21:53:22] INFO eventSocketPort= '50768'
-[20 Dez 2011 21:53:22] INFO sqlScript= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\DBScripts\ForSale_111220_215258.sql'
-[20 Dez 2011 21:53:22] INFO ================================================================================
-[20 Dez 2011 21:53:22] INFO Connecting to the Database...
-[20 Dez 2011 21:53:22] INFO Database connection estabilished
-[20 Dez 2011 21:53:22] INFO transaction isolation: 4
-[20 Dez 2011 21:53:22] DEBUG ================================================================================
-[20 Dez 2011 21:53:22] DEBUG Executing SQL script file: C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\DBScripts\ForSale_111220_215258.sql
-[20 Dez 2011 21:53:22] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
-[20 Dez 2011 21:53:22] ERROR Could not execute statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
-com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'group' already exists
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
-	at com.mysql.jdbc.Util.getInstance(Util.java:386)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2618)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2568)
-	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:842)
-	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:681)
-	at com.webratio.commons.db.utils.DBUtils.execute(DBUtils.java:523)
-	at com.webratio.commons.db.utils.DBUtils.executeScriptFiles(DBUtils.java:442)
-	at com.webratio.commons.db.utils.DBUtils.main(DBUtils.java:257)
-[20 Dez 2011 21:53:22] DEBUG Performing roolback...
-[20 Dez 2011 21:53:22] WARN NOTE: The rollback affects the DDL instructions only if supported by the current database
-[20 Dez 2011 21:53:22] DEBUG Rollback successfully executed
-[20 Dez 2011 21:53:22] ERROR SQL SCRIPT EXECUTION FAILED
-[20 Dez 2011 21:53:22] INFO Database connection closed
-[20 Dez 2011 21:53:22] DEBUG Total time: 416 milliseconds
+[21 Dez 2011 17:39:21] DEBUG Executing SQL script
+[21 Dez 2011 17:39:21] INFO ================================================================================
+[21 Dez 2011 17:39:21] INFO outputPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\SQL.xml'
+[21 Dez 2011 17:39:21] INFO onError= 'abort'
+[21 Dez 2011 17:39:21] INFO statementSeparator= ';'
+[21 Dez 2011 17:39:21] INFO derby.system.home= 'C:\WebRatio\WebRatio Personal 6.1.1\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[21 Dez 2011 17:39:21] INFO password= ''
+[21 Dez 2011 17:39:21] INFO url= 'jdbc:mysql://localhost:3306/test'
+[21 Dez 2011 17:39:21] INFO username= 'root'
+[21 Dez 2011 17:39:21] INFO autoCommit= 'false'
+[21 Dez 2011 17:39:21] INFO outputLogPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\SQL.xml.log'
+[21 Dez 2011 17:39:21] INFO driverClass= 'com.mysql.jdbc.Driver'
+[21 Dez 2011 17:39:21] INFO encoding= ''
+[21 Dez 2011 17:39:21] INFO eventSocketPort= '51589'
+[21 Dez 2011 17:39:21] INFO sqlScript= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\DBScripts\ForSale3.sql'
+[21 Dez 2011 17:39:21] INFO ================================================================================
+[21 Dez 2011 17:39:21] INFO Connecting to the Database...
+[21 Dez 2011 17:39:21] INFO Database connection estabilished
+[21 Dez 2011 17:39:21] INFO transaction isolation: 4
+[21 Dez 2011 17:39:21] DEBUG ================================================================================
+[21 Dez 2011 17:39:21] DEBUG Executing SQL script file: C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\DBScripts\ForSale3.sql
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    create table `user` ( `oid`  integer  not null, `email`  varchar(255), `password`  varchar(255), `nome_2`  varchar(255), `telemovel_2`  integer, `estado_2`  bit, `username`  varchar(255), primary key (`oid`) )
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    create table `anuncios` ( `id_anuncio`  integer  not null, `cor`  varchar(255), `tipo`  varchar(255), `carrocaria`  varchar(255), `combustivel`  varchar(255), `km`  double precision, `ano`  integer, `data`  date, `preco`  double precision, `marca`  varchar(255), `modelo`  varchar(255), `descricao`  varchar(255), `titulo`  varchar(255), `cilindrada`  varchar(255), primary key (`id_anuncio`) )
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    create table `fotografias` ( `id_foto`  integer  not null, `nome`  varchar(255), `foto`  varchar(255), primary key (`id_foto`) )
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    create table `comentarios` ( `id_comentario`  integer  not null, `comentario`  varchar(255), `estado`  bit, primary key (`id_comentario`) )
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  alter table `group`   add index fk_group_module (`module_oid`), add constraint fk_group_module foreign key (`module_oid`) references `module` (`oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  create index `idx_group_module` on `group`(`module_oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    create table `group_module` ( `group_oid`  integer not null, `module_oid`  integer not null, primary key (`group_oid`, `module_oid`) )
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_group (`group_oid`), add constraint fk_group_module_group foreign key (`group_oid`) references `group` (`oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_module (`module_oid`), add constraint fk_group_module_module foreign key (`module_oid`) references `module` (`oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  create index `idx_group_module_group` on `group_module`(`group_oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  create index `idx_group_module_module` on `group_module`(`module_oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    alter table `user`  add column  `group_oid`  integer
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  alter table `user`   add index fk_user_group (`group_oid`), add constraint fk_user_group foreign key (`group_oid`) references `group` (`oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  create index `idx_user_group` on `user`(`group_oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:    create table `user_group` ( `user_oid`  integer not null, `group_oid`  integer not null, primary key (`user_oid`, `group_oid`) )
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_user (`user_oid`), add constraint fk_user_group_user foreign key (`user_oid`) references `user` (`oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_group (`group_oid`), add constraint fk_user_group_group foreign key (`group_oid`) references `group` (`oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  create index `idx_user_group_user` on `user_group`(`user_oid`)
+[21 Dez 2011 17:39:21] DEBUG Executing statement:  create index `idx_user_group_group` on `user_group`(`group_oid`)
+[21 Dez 2011 17:39:22] DEBUG ================================================================================
+[21 Dez 2011 17:39:22] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[21 Dez 2011 17:39:22] INFO Database connection closed
+[21 Dez 2011 17:39:22] DEBUG Total time: 1083 milliseconds

@@ -1,0 +1,44 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="572" gr:y="250" id="sv1#area4#area6#area11#page15" name="Adicionar Foto" linkOrder="sv1#area4#area6#area11#page15#ln39">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv1#area4#area6#area11#page15#seu4" name="SelectorUnit4" entity="ent1">
+      <Selector id="sv1#area4#area6#area11#page15#seu4#su9" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area6#area11#page15#seu4#su9#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area4#area6#area11#page15#seu4#ln38" name="Link38" to="sv1#area4#area6#area11#cnu1" type="transport" validate="true">
+        <LinkParameter id="sv1#area4#area6#area11#page15#seu4#ln38#par87" name="id_anuncio_KeyCondition12 [id_anuncio] [Anuncios] [Source]" source="ent1#att1Array" target="sv1#area4#area6#area11#cnu1#su10#kcond12.ent1#att1"/>
+      </Link>
+    </SelectorUnit>
+    <EntryUnit gr:x="14" gr:y="144" id="sv1#area4#area6#area11#page15#enu9" name="Indique a Foto" linkOrder="sv1#area4#area6#area11#page15#enu9#ln37">
+      <Field id="sv1#area4#area6#area11#page15#enu9#fld85" name="nome" type="string" modifiable="true" preloaded="true"/>
+      <Field id="sv1#area4#area6#area11#page15#enu9#fld86" name="foto" type="blob" modifiable="true" preloaded="true"/>
+      <Link id="sv1#area4#area6#area11#page15#enu9#ln37" name="adicionar" to="sv1#area4#area6#area11#cru4" type="normal" validate="true">
+        <LinkParameter id="sv1#area4#area6#area11#page15#enu9#ln37#par85" name="foto_foto" source="sv1#area4#area6#area11#page15#enu9#fld86" target="sv1#area4#area6#area11#cru4.ent3#att16"/>
+        <LinkParameter id="sv1#area4#area6#area11#page15#enu9#ln37#par86" name="nome_nome" source="sv1#area4#area6#area11#page15#enu9#fld85" target="sv1#area4#area6#area11#cru4.ent3#att15"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area6#area11#page15#enu9">
+          <layout:Field field="sv1#area4#area6#area11#page15#enu9#fld85"/>
+          <layout:Field field="sv1#area4#area6#area11#page15#enu9#fld86"/>
+          <layout:Link link="sv1#area4#area6#area11#page15#enu9#ln37"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area4#area6#area11#page15#ln39" name="Voltar" to="sv1#area4#area6#area11#page4" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

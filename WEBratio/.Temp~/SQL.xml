@@ -1,30 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<DBError statementIndex="0">
-  <ErrorMessage>com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'group' already exists</ErrorMessage>
-  <Comment> Group [Group]</Comment>
-  <Statement> create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )</Statement>
-  <ErrorMessage>com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'group' already exists</ErrorMessage>
-  <StackTrace>com.webratio.commons.db.DBException: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'group' already exists
-	at com.webratio.commons.db.utils.DBUtils.execute(DBUtils.java:546)
-	at com.webratio.commons.db.utils.DBUtils.executeScriptFiles(DBUtils.java:442)
-	at com.webratio.commons.db.utils.DBUtils.main(DBUtils.java:257)
-Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'group' already exists
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
-	at com.mysql.jdbc.Util.getInstance(Util.java:386)
-	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1052)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3609)
-	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3541)
-	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2002)
-	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2163)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2618)
-	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2568)
-	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:842)
-	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:681)
-	at com.webratio.commons.db.utils.DBUtils.execute(DBUtils.java:523)
-	... 2 more
-</StackTrace></DBError>
+<OperationSucceded/>

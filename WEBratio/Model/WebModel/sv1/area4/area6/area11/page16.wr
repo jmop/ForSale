@@ -1,0 +1,41 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="552" gr:y="40" id="sv1#area4#area6#area11#page16" name="Remover Foto" linkOrder="sv1#area4#area6#area11#page16#ln46">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv1#area4#area6#area11#page16#seu5" name="SelectorUnit5" entity="ent1">
+      <Selector id="sv1#area4#area6#area11#page16#seu5#su18" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area6#area11#page16#seu5#su18#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area4#area6#area11#page16#seu5#ln41" name="Link41" to="sv1#area4#area6#area11#page16#inu5" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv1#area4#area6#area11#page16#seu5#ln44" name="Link44" to="sv1#area4#area6#area11#dcnu1" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <IndexUnit gr:x="124" gr:y="14" id="sv1#area4#area6#area11#page16#inu5" name="Fotos Do Anuncio" entity="ent3" linkOrder="sv1#area4#area6#area11#page16#inu5#ln43" displayAttributes="ent3#att15 ent3#att16">
+      <Selector id="sv1#area4#area6#area11#page16#inu5#su19" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area4#area6#area11#page16#inu5#su19#rcond3" name="RoleCondition3" role="rel10#role19" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area4#area6#area11#page16#inu5#ln43" name="Remover" to="sv1#area4#area6#area11#dcnu1" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area6#area11#page16#inu5">
+          <layout:Link link="sv1#area4#area6#area11#page16#inu5#ln43"/>
+          <layout:Attribute attribute="ent3#att15"/>
+          <layout:Attribute attribute="ent3#att16"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area4#area6#area11#page16#ln46" name="voltar" to="sv1#area4#area6#area11#page4" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

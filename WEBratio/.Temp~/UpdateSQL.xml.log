@@ -1,32 +1,31 @@
-[20 Dez 2011 22:03:01] DEBUG Executing SQL script
-[20 Dez 2011 22:03:01] INFO ================================================================================
-[20 Dez 2011 22:03:01] INFO outputPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.xml'
-[20 Dez 2011 22:03:01] INFO onError= 'continue'
-[20 Dez 2011 22:03:01] INFO statementSeparator= ';'
-[20 Dez 2011 22:03:01] INFO derby.system.home= 'C:\WebRatio\WebRatio Personal 6.1.1\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[20 Dez 2011 22:03:01] INFO password= ''
-[20 Dez 2011 22:03:01] INFO url= 'jdbc:mysql://localhost:3306/ForSale'
-[20 Dez 2011 22:03:01] INFO username= 'root'
-[20 Dez 2011 22:03:01] INFO autoCommit= 'false'
-[20 Dez 2011 22:03:01] INFO outputLogPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.xml.log'
-[20 Dez 2011 22:03:01] INFO driverClass= 'com.mysql.jdbc.Driver'
-[20 Dez 2011 22:03:01] INFO encoding= ''
-[20 Dez 2011 22:03:01] INFO eventSocketPort= '50843'
-[20 Dez 2011 22:03:01] INFO sqlScript= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.sql'
-[20 Dez 2011 22:03:01] INFO ================================================================================
-[20 Dez 2011 22:03:01] INFO Connecting to the Database...
-[20 Dez 2011 22:03:01] INFO Database connection estabilished
-[20 Dez 2011 22:03:01] INFO transaction isolation: 4
-[20 Dez 2011 22:03:01] DEBUG ================================================================================
-[20 Dez 2011 22:03:01] DEBUG Executing SQL script file: C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.sql
-[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`  add column  `nome_2`  varchar(255)
-[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`  add column  `telemovel_2`  integer
-[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`  add column  `estado_2`  bit
-[20 Dez 2011 22:03:01] DEBUG Executing statement:    alter table `user`  add column  `anuncios_id_anuncio`  integer
-[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`   add index fk_user_anuncios (`anuncios_id_anuncio`), add constraint fk_user_anuncios foreign key (`anuncios_id_anuncio`) references `anuncios` (`id_anuncio`)
-[20 Dez 2011 22:03:01] DEBUG Executing statement:    alter table `user`  add column  `comentarios_id_comentario`  integer
-[20 Dez 2011 22:03:01] DEBUG Executing statement:  alter table `user`   add index fk_user_comentarios (`comentarios_id_comentario`), add constraint fk_user_comentarios foreign key (`comentarios_id_comentario`) references `comentarios` (`id_comentario`)
-[20 Dez 2011 22:03:02] DEBUG ================================================================================
-[20 Dez 2011 22:03:02] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[20 Dez 2011 22:03:02] INFO Database connection closed
-[20 Dez 2011 22:03:02] DEBUG Total time: 630 milliseconds
+[21 Dez 2011 17:41:52] DEBUG Executing SQL script
+[21 Dez 2011 17:41:52] INFO ================================================================================
+[21 Dez 2011 17:41:52] INFO outputPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.xml'
+[21 Dez 2011 17:41:52] INFO onError= 'continue'
+[21 Dez 2011 17:41:52] INFO statementSeparator= ';'
+[21 Dez 2011 17:41:52] INFO derby.system.home= 'C:\WebRatio\WebRatio Personal 6.1.1\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[21 Dez 2011 17:41:52] INFO password= ''
+[21 Dez 2011 17:41:52] INFO url= 'jdbc:mysql://localhost:3306/test'
+[21 Dez 2011 17:41:52] INFO username= 'root'
+[21 Dez 2011 17:41:52] INFO autoCommit= 'false'
+[21 Dez 2011 17:41:52] INFO outputLogPath= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.xml.log'
+[21 Dez 2011 17:41:52] INFO driverClass= 'com.mysql.jdbc.Driver'
+[21 Dez 2011 17:41:52] INFO encoding= ''
+[21 Dez 2011 17:41:52] INFO eventSocketPort= '51627'
+[21 Dez 2011 17:41:52] INFO sqlScript= 'C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.sql'
+[21 Dez 2011 17:41:52] INFO ================================================================================
+[21 Dez 2011 17:41:52] INFO Connecting to the Database...
+[21 Dez 2011 17:41:53] INFO Database connection estabilished
+[21 Dez 2011 17:41:53] INFO transaction isolation: 4
+[21 Dez 2011 17:41:53] DEBUG ================================================================================
+[21 Dez 2011 17:41:53] DEBUG Executing SQL script file: C:\Users\Jorge\Desktop\ACS\Projectos\ForSale\WEBratio\.Temp~\UpdateSQL.sql
+[21 Dez 2011 17:41:53] DEBUG Executing statement:  create table `anuncios_fotografias` ( `anuncios_id_anuncio`  integer not null, `fotografias_id_foto`  integer not null, primary key (`anuncios_id_anuncio`, `fotografias_id_foto`) )
+[21 Dez 2011 17:41:53] DEBUG Executing statement:  alter table `anuncios_fotografias`   add index fk_anuncios_fotografias_anunci (`anuncios_id_anuncio`), add constraint fk_anuncios_fotografias_anunci foreign key (`anuncios_id_anuncio`) references `anuncios` (`id_anuncio`)
+[21 Dez 2011 17:41:53] DEBUG Executing statement:  alter table `anuncios_fotografias`   add index fk_anuncios_fotografias_fotogr (`fotografias_id_foto`), add constraint fk_anuncios_fotografias_fotogr foreign key (`fotografias_id_foto`) references `fotografias` (`id_foto`)
+[21 Dez 2011 17:41:53] DEBUG Executing statement:    create table `anuncios_comentarios` ( `anuncios_id_anuncio`  integer not null, `comentarios_id_comentario`  integer not null, primary key (`anuncios_id_anuncio`, `comentarios_id_comentario`) )
+[21 Dez 2011 17:41:53] DEBUG Executing statement:  alter table `anuncios_comentarios`   add index fk_anuncios_comentarios_anunci (`anuncios_id_anuncio`), add constraint fk_anuncios_comentarios_anunci foreign key (`anuncios_id_anuncio`) references `anuncios` (`id_anuncio`)
+[21 Dez 2011 17:41:53] DEBUG Executing statement:  alter table `anuncios_comentarios`   add index fk_anuncios_comentarios_coment (`comentarios_id_comentario`), add constraint fk_anuncios_comentarios_coment foreign key (`comentarios_id_comentario`) references `comentarios` (`id_comentario`)
+[21 Dez 2011 17:41:53] DEBUG ================================================================================
+[21 Dez 2011 17:41:53] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[21 Dez 2011 17:41:53] INFO Database connection closed
+[21 Dez 2011 17:41:53] DEBUG Total time: 491 milliseconds
