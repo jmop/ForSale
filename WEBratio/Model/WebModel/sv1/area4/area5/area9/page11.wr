@@ -23,12 +23,12 @@
         <LinkParameter id="sv1#area4#area5#area9#page11#enu6#ln13#par16" name="telemovel_telemovel" source="sv1#area4#area5#area9#page11#enu6#fld16" target="sv1#area4#area5#area9#mfu1.User#att27"/>
         <LinkParameter id="sv1#area4#area5#area9#page11#enu6#ln13#par17" name="userName_userName" source="sv1#area4#area5#area9#page11#enu6#fld13" target="sv1#area4#area5#area9#mfu1.userName"/>
       </Link>
-      <Field id="sv1#area4#area5#area9#page11#enu6#fld12" name="nome" type="string" modifiable="true" preloaded="true"/>
-      <Field id="sv1#area4#area5#area9#page11#enu6#fld13" name="userName" type="string" modifiable="true" preloaded="true"/>
-      <Field id="sv1#area4#area5#area9#page11#enu6#fld14" name="password" type="string" modifiable="true" preloaded="true"/>
-      <Field id="sv1#area4#area5#area9#page11#enu6#fld15" name="email" type="string" modifiable="true" preloaded="true"/>
-      <Field id="sv1#area4#area5#area9#page11#enu6#fld16" name="telemovel" type="integer" modifiable="true" preloaded="true"/>
-      <Field id="sv1#area4#area5#area9#page11#enu6#fld17" name="estado" type="boolean" modifiable="true" preloaded="true" hidden="true"/>
+      <Field id="sv1#area4#area5#area9#page11#enu6#fld12" name="nome" type="string" modifiable="false" preloaded="true"/>
+      <Field id="sv1#area4#area5#area9#page11#enu6#fld13" name="userName" type="string" modifiable="false" preloaded="true"/>
+      <Field id="sv1#area4#area5#area9#page11#enu6#fld14" name="password" type="string" modifiable="false" preloaded="true"/>
+      <Field id="sv1#area4#area5#area9#page11#enu6#fld15" name="email" type="string" modifiable="false" preloaded="true"/>
+      <Field id="sv1#area4#area5#area9#page11#enu6#fld16" name="telemovel" type="integer" modifiable="false" preloaded="true"/>
+      <Field id="sv1#area4#area5#area9#page11#enu6#fld17" name="estado" type="boolean" modifiable="false" preloaded="true" hidden="true"/>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid>

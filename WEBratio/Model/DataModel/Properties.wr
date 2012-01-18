@@ -70,10 +70,11 @@
     <Attribute id="ent3#att15" name="nome" type="string" db:column="nome"/>
     <Attribute id="ent3#att16" name="foto" type="blob" db:column="foto"/>
   </Entity>
-  <Entity gr:x="30" gr:y="340" id="ent4" name="Comentarios" duration="persistent" attributeOrder="ent4#att14 ent4#att22 ent4#att23" db:database="db1" db:table="comentarios">
+  <Entity gr:x="30" gr:y="340" id="ent4" name="Comentarios" duration="persistent" attributeOrder="ent4#att14 ent4#att19 ent4#att22 ent4#att23" db:database="db1" db:table="comentarios">
     <Attribute id="ent4#att14" key="true" name="id_comentario" type="integer" db:column="id_comentario"/>
     <Attribute id="ent4#att22" name="comentario" type="string" db:column="comentario"/>
     <Attribute id="ent4#att23" name="estado" type="boolean" db:column="estado"/>
+    <Attribute id="ent4#att19" name="username" type="string" db:column="username"/>
   </Entity>
   <db:Database id="db1" name="ForSale" type="MySQL" url="jdbc:mysql://localhost:3306/test" username="root"/>
   <Relationship id="rel9" name="Anuncios_User" sourceEntity="ent1" targetEntity="User" db:database="db1" db:table="anuncios">

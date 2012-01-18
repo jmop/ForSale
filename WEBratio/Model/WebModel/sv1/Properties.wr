@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="ForSale" homePage="sv1#area1#page6" landmarks="sv1#area2 sv1#area1">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="ForSale" homePage="sv1#area1#page6">
   <OperationUnits>
     <CreateUnit gr:x="20" gr:y="40" id="sv1#cru3" name="CreateUnit3" entity="ent3">
       <OKLink id="sv1#cru3#oln6" name="OKLink6" to="sv1#area2#page5#dau3" automaticCoupling="true"/>

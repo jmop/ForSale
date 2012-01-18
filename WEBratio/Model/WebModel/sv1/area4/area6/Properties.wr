@@ -1,3 +1,16 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="604" gr:y="0" id="sv1#area4#area6" name="ANUNCIOS" landmark="false" landmarks="sv1#area4#area6#page7">
-  <OperationUnits/>
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="604" gr:y="0" id="sv1#area4#area6" name="ANUNCIOS" landmark="false" landmarks="sv1#area4#area6#page7" defaultArea="sv1#area4#area6#area10">
+  <OperationUnits>
+    <CreateUnit gr:x="880" gr:y="470" id="sv1#area4#area6#cru5" name="comentario" entity="ent4">
+      <OKLink id="sv1#area4#area6#cru5#oln13" name="OKLink13" to="sv1#area4#area6#cnu2" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit gr:x="590" gr:y="520" id="sv1#area4#area6#cnu2" name="ConnectUnit2" relationship="rel11#role21">
+      <SourceSelector id="sv1#area4#area6#cnu2#su26" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area6#cnu2#su26#kcond22" name="KeyCondition22" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv1#area4#area6#cnu2#su27" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area6#cnu2#su27#kcond23" name="KeyCondition23" predicate="in" implied="false"/>
+      </TargetSelector>
+      <OKLink id="sv1#area4#area6#cnu2#oln11" name="OKLink11" to="sv1#area4#area6#page8#dau1" automaticCoupling="true"/>
+    </ConnectUnit>
+  </OperationUnits>
 </Area>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="402" gr:y="170" id="sv1#area4#area6#area11#page13" name="Adicionar Anuncio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="402" gr:y="170" id="sv1#area4#area6#area11#page13" name="Adicionar Anuncio" linkOrder="sv1#area4#area6#area11#page13#ln16">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv1#area4#area6#area11#page13#enu3" name="Dados Anuncio" linkOrder="sv1#area4#area6#area11#page13#enu3#ln8" fieldOrder="sv1#area4#area6#area11#page13#enu3#fld1 sv1#area4#area6#area11#page13#enu3#fld2 sv1#area4#area6#area11#page13#enu3#fld3 sv1#area4#area6#area11#page13#enu3#fld4 sv1#area4#area6#area11#page13#enu3#fld5 sv1#area4#area6#area11#page13#enu3#fld23 sv1#area4#area6#area11#page13#enu3#fld24 sv1#area4#area6#area11#page13#enu3#fld25 sv1#area4#area6#area11#page13#enu3#fld26 sv1#area4#area6#area11#page13#enu3#fld27 sv1#area4#area6#area11#page13#enu3#fld28 sv1#area4#area6#area11#page13#enu3#fld29 sv1#area4#area6#area11#page13#enu3#fld30">
       <Field id="sv1#area4#area6#area11#page13#enu3#fld1" name="titulo" type="string" modifiable="true" preloaded="false"/>
@@ -65,4 +65,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#area4#area6#area11#page13#ln16" name="voltar" to="sv1#area4#area6#area11#page4" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-195,13,201,17"/>
 </Page>

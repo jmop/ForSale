@@ -30,6 +30,7 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="id_comentario" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="comentario" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="BIT" size="1" decimalDigits="0" name="estado" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="fotografias" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="id_foto" primaryKey="true" notNull="true"/>

@@ -2,7 +2,7 @@
   <OperationUnits>
     <CreateUnit gr:x="282" gr:y="20" id="sv1#area4#area6#area11#cru1" name="CreateAnuncio" entity="ent1">
       <OKLink id="sv1#area4#area6#area11#cru1#oln7" name="OKLink7" to="sv1#area4#area6#area11#page4" automaticCoupling="true"/>
-      <KOLink id="sv1#area4#area6#area11#cru1#kln6" name="KOLink6" to="sv1#area4#area6#area11#page13#enu3" automaticCoupling="true" gr:bendpoints="-67,38,76,-11"/>
+      <KOLink id="sv1#area4#area6#area11#cru1#kln6" name="KOLink6" to="sv1#area4#area5#page10" automaticCoupling="true" gr:bendpoints="-67,38,76,-11"/>
     </CreateUnit>
     <ModifyUnit gr:x="10" gr:y="358" id="sv1#area4#area6#area11#mfu3" name="Editar Anuncio" entity="ent1">
       <Selector id="sv1#area4#area6#area11#mfu3#su14" defaultPolicy="fill" booleanOperator="and">
@@ -32,7 +32,7 @@
       <TargetSelector id="sv1#area4#area6#area11#cnu1#su11" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area4#area6#area11#cnu1#su11#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
       </TargetSelector>
-      <OKLink id="sv1#area4#area6#area11#cnu1#oln12" name="OKLink12" to="sv1#area4#area6#area11#page15" automaticCoupling="true"/>
+      <OKLink id="sv1#area4#area6#area11#cnu1#oln12" name="OKLink12" to="sv1#area4#area6#area11#page4" automaticCoupling="true"/>
     </ConnectUnit>
     <DeleteUnit gr:x="852" gr:y="90" id="sv1#area4#area6#area11#dlu3" name="DeleteUnit3" entity="ent3">
       <Selector id="sv1#area4#area6#area11#dlu3#su20" defaultPolicy="fill" booleanOperator="and">

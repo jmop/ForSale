@@ -3,18 +3,18 @@
     <EntryUnit gr:x="0" gr:y="0" id="sv1#area4#area5#area8#page1#enu1" name="Registo" linkOrder="sv1#area4#area5#area8#page1#enu1#ln2">
       <Link id="sv1#area4#area5#area8#page1#enu1#ln2" name="Registar" to="sv1#area4#area5#area8#cru2" type="normal" validate="true">
         <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par6" name="email_email" source="sv1#area4#area5#area8#page1#enu1#fld9" target="sv1#area4#area5#area8#cru2.email"/>
-        <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par7" name="estado_estado" source="sv1#area4#area5#area8#page1#enu1#fld11" target="sv1#area4#area5#area8#cru2.User#att30"/>
+        <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par7" name="estado_estado" target="sv1#area4#area5#area8#cru2.User#att30" sourceValue="0"/>
         <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par8" name="nome_nome" source="sv1#area4#area5#area8#page1#enu1#fld6" target="sv1#area4#area5#area8#cru2.User#att21"/>
         <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par9" name="password_password" source="sv1#area4#area5#area8#page1#enu1#fld8" target="sv1#area4#area5#area8#cru2.password"/>
         <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par10" name="telemovel_telemovel" source="sv1#area4#area5#area8#page1#enu1#fld10" target="sv1#area4#area5#area8#cru2.User#att27"/>
         <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par11" name="userName_userName" source="sv1#area4#area5#area8#page1#enu1#fld7" target="sv1#area4#area5#area8#cru2.userName"/>
+        <LinkParameter id="sv1#area4#area5#area8#page1#enu1#ln2#par80" name="2_Group.oid(defaultGroup)" sourceValue="2" target="sv1#area4#area5#area8#cru2.User2DefaultGroup.groupOID"/>
       </Link>
       <Field id="sv1#area4#area5#area8#page1#enu1#fld6" name="nome" type="string" modifiable="true"/>
       <Field id="sv1#area4#area5#area8#page1#enu1#fld7" name="userName" type="string" modifiable="true"/>
       <Field id="sv1#area4#area5#area8#page1#enu1#fld8" name="password" type="password" modifiable="true"/>
       <Field id="sv1#area4#area5#area8#page1#enu1#fld9" name="email" type="string" modifiable="true"/>
       <Field id="sv1#area4#area5#area8#page1#enu1#fld10" name="telemovel" type="integer" modifiable="true"/>
-      <Field id="sv1#area4#area5#area8#page1#enu1#fld11" name="estado" type="boolean" modifiable="true" hidden="true"/>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid>

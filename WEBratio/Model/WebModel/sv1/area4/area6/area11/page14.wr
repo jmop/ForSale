@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="182" gr:y="310" id="sv1#area4#area6#area11#page14" name="Modificar Anuncio">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="182" gr:y="310" id="sv1#area4#area6#area11#page14" name="Modificar Anuncio" linkOrder="sv1#area4#area6#area11#page14#ln30">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="132" id="sv1#area4#area6#area11#page14#enu5" name="Dados Anuncio" linkOrder="sv1#area4#area6#area11#page14#enu5#ln26">
       <Field id="sv1#area4#area6#area11#page14#enu5#fld33" name="titulo" type="string" modifiable="true" preloaded="true"/>
@@ -86,4 +86,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#area4#area6#area11#page14#ln30" name="voltar" to="sv1#area4#area6#area11#page4" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

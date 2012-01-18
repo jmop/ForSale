@@ -1,0 +1,52 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="560" gr:y="284" id="sv1#area4#area6#page19" name="Comentario" protected="true">
+  <ContentUnits>
+    <SelectorUnit gr:x="0" gr:y="76" id="sv1#area4#area6#page19#seu6" name="Anuncio" entity="ent1">
+      <Selector id="sv1#area4#area6#page19#seu6#su25" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area6#page19#seu6#su25#kcond21" name="KeyCondition21" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area4#area6#page19#seu6#ln48" name="Link48" to="sv1#area4#area6#cnu2" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <EntryUnit gr:x="94" gr:y="100" id="sv1#area4#area6#page19#enu10" name="Coment&#225;rio:" linkOrder="sv1#area4#area6#page19#enu10#ln42" fieldOrder="sv1#area4#area6#page19#enu10#fld57 sv1#area4#area6#page19#enu10#fld55">
+      <Field id="sv1#area4#area6#page19#enu10#fld55" name="comentario" type="text" modifiable="true" preloaded="true"/>
+      <Link id="sv1#area4#area6#page19#enu10#ln42" name="Comentar" to="sv1#area4#area6#cru5" type="normal" validate="true">
+        <LinkParameter id="sv1#area4#area6#page19#enu10#ln42#par94" name="comentario_comentario" source="sv1#area4#area6#page19#enu10#fld55" target="sv1#area4#area6#cru5.ent4#att22"/>
+        <LinkParameter id="sv1#area4#area6#page19#enu10#ln42#par74" name="username_username" source="sv1#area4#area6#page19#enu10#fld57" target="sv1#area4#area6#cru5.ent4#att19"/>
+      </Link>
+      <Field id="sv1#area4#area6#page19#enu10#fld57" name="username" type="string" modifiable="false" preloaded="true"/>
+    </EntryUnit>
+    <GetUnit gr:x="54" gr:y="0" id="sv1#area4#area6#page19#gtu1" name="userlogin" contextParameters="UserCtxParam">
+      <Link id="sv1#area4#area6#page19#gtu1#ln47" name="Link47" to="sv1#area4#area6#page19#seu8" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <SelectorUnit gr:x="204" gr:y="0" id="sv1#area4#area6#page19#seu8" name="User" entity="User">
+      <Selector id="sv1#area4#area6#page19#seu8#su23" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area4#area6#page19#seu8#su23#kcond19" name="KeyCondition19" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv1#area4#area6#page19#seu8#ln49" name="Link49" to="sv1#area4#area6#page19#enu10" type="transport" validate="true">
+        <LinkParameter id="sv1#area4#area6#page19#seu8#ln49#par73" name="userName_username" source="userNameArray" target="sv1#area4#area6#page19#enu10#fld57_slot"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area4#area6#page19#enu10">
+          <layout:Link link="sv1#area4#area6#page19#enu10#ln42"/>
+          <layout:Field field="sv1#area4#area6#page19#enu10#fld57"/>
+          <layout:Field field="sv1#area4#area6#page19#enu10#fld55"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
