@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area1#page6" name="Login" landmark="false" linkOrder="sv1#area1#page6#ln6">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area1#page6" name="Login" landmark="false" linkOrder="sv1#area1#page6#ln6 sv1#area1#page6#ln52">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv1#area1#page6#enu2" name="Iniciar Sess&#227;o" linkOrder="sv1#area1#page6#enu2#ln1">
       <Link id="sv1#area1#page6#enu2#ln1" name="Login" to="sv1#area1#lgu1" type="normal" validate="true">
@@ -33,4 +33,5 @@
     </layout:Row>
   </layout:Grid>
   <Link id="sv1#area1#page6#ln6" name="Registar" to="sv1#area4#area5#area8#page1" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area1#page6#ln52" to="sv1#area4#area6#page7" automaticCoupling="true" type="normal" validate="true" name="ver anuncios"/>
 </Page>

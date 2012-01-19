@@ -17,20 +17,25 @@
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="titulo" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="cilindrada" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="user_oid" foreignColumnName="oid" name="fk_anuncios_user" foreignTableName="user" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="anuncios_comentarios" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="anuncios_id_anuncio" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="comentarios_id_comentario" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="comentarios_id_comentario" foreignColumnName="id_comentario" name="fk_anuncios_comentarios_coment" foreignTableName="comentarios" foreignSchemaName=""/>
+    <ForeignKey localColumnName="anuncios_id_anuncio" foreignColumnName="id_anuncio" name="fk_anuncios_comentarios_anunci" foreignTableName="anuncios" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="anuncios_fotografias" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="anuncios_id_anuncio" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="fotografias_id_foto" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="fotografias_id_foto" foreignColumnName="id_foto" name="fk_anuncios_fotografias_fotogr" foreignTableName="fotografias" foreignSchemaName=""/>
+    <ForeignKey localColumnName="anuncios_id_anuncio" foreignColumnName="id_anuncio" name="fk_anuncios_fotografias_anunci" foreignTableName="anuncios" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="comentarios" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="id_comentario" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="comentario" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="BIT" size="1" decimalDigits="0" name="estado" primaryKey="false" notNull="false"/>
-    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="fotografias" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="id_foto" primaryKey="true" notNull="true"/>
@@ -41,10 +46,13 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="groupname" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module" foreignTableName="module" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="group_module" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module_module" foreignTableName="module" foreignSchemaName=""/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_group_module_group" foreignTableName="group" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="module" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -60,9 +68,12 @@
     <Column sqlTypeId="-7" indexed="unknown" autoIncrement="false" type="BIT" size="1" decimalDigits="0" name="estado_2" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="false" notNull="false"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_user_group" foreignTableName="group" foreignSchemaName=""/>
   </Table>
   <Table schema="" ignoreIndexes="false" name="user_group" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_oid" primaryKey="true" notNull="true"/>
+    <ForeignKey localColumnName="group_oid" foreignColumnName="oid" name="fk_user_group_group" foreignTableName="group" foreignSchemaName=""/>
+    <ForeignKey localColumnName="user_oid" foreignColumnName="oid" name="fk_user_group_user" foreignTableName="user" foreignSchemaName=""/>
   </Table>
 </DBMetaData>

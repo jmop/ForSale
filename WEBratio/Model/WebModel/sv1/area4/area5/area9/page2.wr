@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="80" gr:y="110" id="sv1#area4#area5#area9#page2" name="Gest&#227;o de Utilizadores" protected="true" secure="false" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="80" gr:y="110" id="sv1#area4#area5#area9#page2" name="Gest&#227;o de Utilizadores" protected="true" secure="false" landmark="true" linkOrder="sv1#area4#area5#area9#page2#ln54">
   <ContentUnits>
     <IndexUnit gr:x="0" gr:y="0" id="sv1#area4#area5#area9#page2#inu1" name="Lista de Utilizadores" linkOrder="sv1#area4#area5#area9#page2#inu1#ln12 sv1#area4#area5#area9#page2#inu1#ln15 sv1#area4#area5#area9#page2#inu1#ln19" entity="User" displayAttributes="User#att21 userName email User#att27 User#att30">
       <Link id="sv1#area4#area5#area9#page2#inu1#ln12" name="editar" to="sv1#area4#area5#area9#page11#seu2" type="normal" automaticCoupling="true" validate="true"/>
@@ -34,4 +34,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv1#area4#area5#area9#page2#ln54" name="Ver Anuncios" to="sv1#area4#area6#page7" automaticCoupling="true" type="normal" validate="true"/>
 </Page>
