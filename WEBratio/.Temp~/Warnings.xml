@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Warnings> 
+  <Warning xpath="id('sv1#cru3')" rootXPath="id('sv1')" error="false" label="CreateUnit3" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO link(s) for the operation unit 'CreateUnit3'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area1#lgu1')" rootXPath="id('sv1')" error="false" label="LoginUnit1" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK link(s) for the operation unit 'LoginUnit1'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area4#lou2')" rootXPath="id('sv1')" error="false" label="Logout" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO link(s) for the operation unit 'Logout'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area4#area6#cru5')" rootXPath="id('sv1')" error="false" label="comentario" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO link(s) for the operation unit 'comentario'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area4#area6#cnu2')" rootXPath="id('sv1')" error="false" label="ConnectUnit2" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO link(s) for the operation unit 'ConnectUnit2'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area4#area6#area11#cnu1')" rootXPath="id('sv1')" error="false" label="ConnectUnit1" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO link(s) for the operation unit 'ConnectUnit1'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area4#area6#area11#dlu3')" rootXPath="id('sv1')" error="false" label="DeleteUnit3" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO link(s) for the operation unit 'DeleteUnit3'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area4#area6#area11#dcnu1')" rootXPath="id('sv1')" error="false" label="DisconnectUnit1" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO link(s) for the operation unit 'DisconnectUnit1'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area4#area5#area9#page2#inu1')" rootXPath="id('sv1')" key="" label="Lista de Utilizadores"> 
+    <Message>Sorting attribute are unspecified for the unit 'Lista de Utilizadores'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area4#area6#page8#mdu1')" rootXPath="id('sv1')" key="" label="Fotos"> 
+    <Message>Sorting attribute are unspecified for the unit 'Fotos'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area4#area6#page8#mdu2')" rootXPath="id('sv1')" key="" label="comentarios"> 
+    <Message>Sorting attribute are unspecified for the unit 'comentarios'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area4#area6#page7#inu2')" rootXPath="id('sv1')" key="" label="Todos os Anuncios"> 
+    <Message>Sorting attribute are unspecified for the unit 'Todos os Anuncios'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area4#area6#page19#enu10')" rootXPath="id('sv1')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Coment&#225;rio:"> 
+    <Message>The mandatory input parameter 'comentario' is not provided to the unit 'Coment&#225;rio:'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area4#area6#area10#page3#inu4')" rootXPath="id('sv1')" key="" label="Anuncios"> 
+    <Message>Sorting attribute are unspecified for the unit 'Anuncios'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area4#area6#area10#page3#inu4#su8#acond3')" rootXPath="id('sv1')" key="EQUAL_PREDICATE_WITH_AND" label="ano"> 
+    <Message>Invalid combination of predicate 'Equal' and boolean operator 'And' for the condition 'ano'</Message>  
+    <Resolution message="Set boolean operator to 'or'" class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="booleanOperator" value="or">Set boolean operator to 'or'</Resolution> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area4#area6#area11#page4#inu3')" rootXPath="id('sv1')" key="" label="Gerir Anuncios"> 
+    <Message>Sorting attribute are unspecified for the unit 'Gerir Anuncios'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv1#area4#area6#area11#page16#inu5')" rootXPath="id('sv1')" key="" label="Fotos Do Anuncio"> 
+    <Message>Sorting attribute are unspecified for the unit 'Fotos Do Anuncio'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv1#area4#area6#area11#page15#enu9')" rootXPath="id('sv1')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Indique a Foto"> 
+    <Message>The mandatory input parameter 'foto' is not provided to the unit 'Indique a Foto'</Message> 
+  </Warning>
+  <Warning xpath="id('sv1#area4#area6#area11#page15#enu9')" rootXPath="id('sv1')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Indique a Foto"> 
+    <Message>The mandatory input parameter 'nome' is not provided to the unit 'Indique a Foto'</Message> 
+  </Warning> 
+</Warnings>

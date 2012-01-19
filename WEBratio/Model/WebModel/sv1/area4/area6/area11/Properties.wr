@@ -40,14 +40,14 @@
       </Selector>
       <OKLink id="sv1#area4#area6#area11#dlu3#oln14" name="OKLink14" to="sv1#area4#area6#area11#page16" automaticCoupling="true"/>
     </DeleteUnit>
-    <DisconnectUnit gr:x="792" gr:y="220" id="sv1#area4#area6#area11#dcnu1" name="DisconnectUnit1" relationship="rel10#role19" linkOrder="sv1#area4#area6#area11#dcnu1#ln45">
+    <DisconnectUnit gr:x="792" gr:y="220" id="sv1#area4#area6#area11#dcnu1" name="DisconnectUnit1" relationship="rel10#role19">
       <SourceSelector id="sv1#area4#area6#area11#dcnu1#su21" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area4#area6#area11#dcnu1#su21#kcond17" name="KeyCondition17" predicate="in" implied="false"/>
       </SourceSelector>
       <TargetSelector id="sv1#area4#area6#area11#dcnu1#su22" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv1#area4#area6#area11#dcnu1#su22#kcond18" name="KeyCondition18" predicate="in" implied="false"/>
       </TargetSelector>
-      <Link id="sv1#area4#area6#area11#dcnu1#ln45" name="Link45" to="sv1#area4#area6#area11#dlu3" automaticCoupling="true" type="transport" validate="true"/>
+      <OKLink id="sv1#area4#area6#area11#dcnu1#oln5" name="OKLink5" to="sv1#area4#area6#area11#dlu3" automaticCoupling="true" gr:bendpoints="29,-66,0,68"/>
     </DisconnectUnit>
   </OperationUnits>
 </Area>
